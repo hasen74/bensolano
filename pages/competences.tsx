@@ -24,7 +24,7 @@ const Competences: NextPage = () => {
         <title>Portfolio de Benjamin Solano</title>
         <meta name="description" content="Développeur fullstack" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="./favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="container">
@@ -35,7 +35,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('html5')}
                 className="competences-img html5"
-                src="./skills/html5.svg"
+                src="/skills/html5.svg"
                 width={60}
                 height={60}
                 alt="HTML5"
@@ -43,7 +43,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('css3')}
                 className="competences-img css3"
-                src="./skills/css3.svg"
+                src="/skills/css3.svg"
                 width={60}
                 height={60}
                 alt="Css3"
@@ -51,7 +51,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('javascript')}
                 className="competences-img javascript"
-                src="./skills/javascript.svg"
+                src="/skills/javascript.svg"
                 width={60}
                 height={60}
                 alt="JavaScript"
@@ -59,7 +59,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('typescript')}
                 className="competences-img typescript"
-                src="./skills/typescript.svg"
+                src="/skills/typescript.svg"
                 width={60}
                 height={60}
                 alt="TypeScript"
@@ -67,7 +67,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('c')}
                 className="competences-img c"
-                src="./skills/c.svg"
+                src="/skills/c.svg"
                 width={60}
                 height={60}
                 alt="C"
@@ -75,7 +75,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('react')}
                 className="competences-img react"
-                src="./skills/react.svg"
+                src="/skills/react.svg"
                 width={60}
                 height={60}
                 alt="React"
@@ -83,7 +83,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('nextjs')}
                 className="competences-img nextjs"
-                src="./skills/nextjs.svg"
+                src="/skills/nextjs.svg"
                 width={60}
                 height={60}
                 alt="NextJS"
@@ -91,7 +91,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('nestjs')}
                 className="competences-img nestjs"
-                src="./skills/nestjs.svg"
+                src="/skills/nestjs.svg"
                 width={60}
                 height={60}
                 alt="NestJS"
@@ -99,7 +99,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('sequelize')}
                 className="competences-img sequelize"
-                src="./skills/sequelize.svg"
+                src="/skills/sequelize.svg"
                 width={60}
                 height={60}
                 alt="Sequelize"
@@ -107,7 +107,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('prisma')}
                 className="competences-img prisma"
-                src="./skills/prisma.svg"
+                src="/skills/prisma.svg"
                 width={60}
                 height={60}
                 alt="Prisma"
@@ -115,7 +115,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('git')}
                 className="competences-img git"
-                src="./skills/git.svg"
+                src="/skills/git.svg"
                 width={60}
                 height={60}
                 alt="Git"
@@ -123,7 +123,7 @@ const Competences: NextPage = () => {
               <Image
                 onClick={() => setSelected('bash')}
                 className="competences-img bash"
-                src="./skills/bash.svg"
+                src="/skills/bash.svg"
                 width={60}
                 height={60}
                 alt="Bash"

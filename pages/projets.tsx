@@ -21,7 +21,7 @@ const Projets: NextPage = () => {
         <title>Portfolio de Benjamin Solano</title>
         <meta name="description" content="Développeur fullstack" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="./favicon.ico" />
+        <link rel="icon" href=".favicon.ico" />
       </Head>
 
       <main className="container">
@@ -50,7 +50,7 @@ const Projets: NextPage = () => {
                   <div className="github-projet">
                     <Image
                       className="github-img-project"
-                      src="./github.png"
+                      src="/github.png"
                       width={30}
                       height={30}
                       title="Voir le code sur Github"

@@ -17,28 +17,28 @@ export default function Navbar() {
       <div className="menu">
         <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           <div className="nav-elements">
-            <Link href="./index">PRESENTATION</Link>
+            <Link href="/index">PRESENTATION</Link>
           </div>
           <div className="nav-elements">
-            <Link href="./competences">COMPETENCES</Link>
+            <Link href="/competences">COMPETENCES</Link>
           </div>
           <div className="nav-elements">
-            <Link href="./projets">PROJETS</Link>
+            <Link href="/projets">PROJETS</Link>
           </div>
         </nav>
         <div className={`burger-button-menu ${isMenuOpen ? 'open' : ''}`}>
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <Image src="./hamburger.png" width="20" height="20" alt="menu"></Image>
+            <Image src="/hamburger.png" width="20" height="20" alt="menu"></Image>
           </button>
         </div>
       </div>
       <div className="socials-container">
         <nav className={`nav-socials ${isSocialsOpen ? 'open' : ''}`}>
           <div className="socials socials-cv">
-            <a href="./CV_Benjamin_Solano_Alternance_Developpeur.pdf" target="_blank" rel="noreferrer">
+            <a href="/CV_Benjamin_Solano_Alternance_Developpeur.pdf" target="_blank" rel="noreferrer">
               <Image className="socials-img socials-img-cv" src="./cv.png" width={30} height={30} alt="cv" />
             </a>
-            <a href="./CV_Benjamin_Solano_Alternance_Developpeur.pdf" target="_blank" rel="noreferrer">
+            <a href="/CV_Benjamin_Solano_Alternance_Developpeur.pdf" target="_blank" rel="noreferrer">
               <p className="tooltiptext tooltiptext-cv">Téléchargez mon CV</p>
             </a>
           </div>
@@ -47,7 +47,7 @@ export default function Navbar() {
               element={
                 <Image
                   className="socials-img socials-img-contact"
-                  src="./mail.png"
+                  src="/mail.png"
                   width={30}
                   height={30}
                   alt="email"
@@ -60,7 +60,7 @@ export default function Navbar() {
             <a href="https://github.com/hasen74" target="_blank" rel="noreferrer">
               <Image
                 className="socials-img socials-img-github"
-                src="./github.png"
+                src="/github.png"
                 width={30}
                 height={30}
                 alt="github"
@@ -71,7 +71,7 @@ export default function Navbar() {
             <a href="https://www.linkedin.com/in/b-solano/" target="_blank" rel="noreferrer">
               <Image
                 className="socials-img socials-img-linkedin"
-                src="./linkedin.png"
+                src="/linkedin.png"
                 width={30}
                 height={30}
                 alt="linkedin"

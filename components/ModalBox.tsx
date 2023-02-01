@@ -36,12 +36,12 @@ function ModalDialog(props: any) {
               target="_blank"
               rel="noreferrer"
             >
-              <Image className="modal-img" src="./gmail.png" width={30} height={30} alt="gmail" />
+              <Image className="modal-img" src="/gmail.png" width={30} height={30} alt="gmail" />
             </a>
             <Image
               onClick={clipboard}
               className="modal-img clipboard"
-              src="./copy.png"
+              src="/copy.png"
               width={30}
               height={30}
               title="Copier dans le presse-papier"

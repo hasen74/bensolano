@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <title>Portfolio de Benjamin Solano</title>
         <meta name="description" content="Développeur fullstack" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="./favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="container">
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <div className="main">
           <div className="presentation">
             <div className="photo-pres animated">
-              <Image className="photo" src="./photo_test.png" width={130} height={130} alt="photo"></Image>
+              <Image className="photo" src="/photo_test.png" width={130} height={130} alt="photo"></Image>
             </div>
             <div className="text-pres animated">
               <div className="text">
