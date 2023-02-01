@@ -1,0 +1,23 @@
+[
+{
+  "Titre": "Inclusion Conseil : application Inclukathon",
+  "Description": "Réalisation en groupe d’un service de chat et d’un calendrier pour les participants à un événement suite au défi lancée par l'entreprise Inclusion Conseil.",
+  "Technologies": "Application front développée avec Next.js, Socket.IO pour le service de chat, API développée avec le framework Nest.js (TypeScript) et modélisation de la base de données MySQL avec Prisma",
+  "Lien": "https://github.com/hasen74/inclukathon",
+  "Image": "./projects/chat.png"
+},
+{
+  "Titre": "Application d'e-commerce",
+  "Description": "Programmation d'une API consommée en front par un site d'e-commerce. Le site inclut une page admin pour la réalisation de toutes les opérations du CRUD.",
+  "Technologies": "Application front développée en React (framework NextJS), API réalisée en TypeScript, le framework Express et Sequelize pour la modélisation de la database.",
+  "Lien": "https://github.com/hasen74/animalplayground",
+  "Image": "./projects/AP-admin.png"
+},
+{
+  "Titre": "The Hyrule Castle",
+  "Description": "Programmation d'un RPG en ligne de commande sur le thème du jeu Zelda.",
+  "Technologies": "JavaScript, TypeScript.",
+  "Lien": "",
+  "Image": "./projects/hyrule_fight.png"
+}
+]

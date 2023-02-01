@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: #f5f7fc;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+@keyframes entrance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: grid;
+  color: black;
+  padding: 5px;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  box-sizing: border-box;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  animation: entrance 1s ease 0s 1 normal forwards;
+}
+
+.presentation {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 35% 65%;
+  grid-template-areas: 'photo-pres text-pres';
+}
+
+.photo-pres {
+  grid-area: photo-pres;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  position: relative;
+  z-index: 2;
+  animation: entrance 2s ease 0s 1 normal forwards;
+}
+.text-pres {
+  grid-area: text-pres;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  height: 90%;
+  justify-content: right;
+  align-items: center;
+}
+.text {
+  position: relative;
+  z-index: 2;
+  text-align: justify;
+}
+.text p {
+  color: white;
+  animation: entrance 3s ease 0s 1 normal forwards;
+}
+.background-rect-index {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  isolation: isolate;
+  z-index: 1;
+  width: 100vw;
+  background-color: black;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Parameters for phones */
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-rows: 14vh auto 4vh;
+    padding: 0;
+  }
+  .main {
+    font-size: 1rem;
+  }
+  .presentation {
+    grid-template-rows: 25% 65%;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'photo-pres' 
+    'text-pres';
+  }
+  .photo-pres {
+    align-items: flex-end;
+  }
+  .photo {
+    position: absolute;
+    max-width: 29vw;
+    height: auto;
+  }
+  .text-pres {
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .text {
+    font-size: 1.2rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .background-rect-index {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 3vh;
+    height: 55vh;
+  }
+  .footer {
+    font-size: xx-small;
+  }
+}
+
+/* Parameters for medium devices */
+@media only screen and (min-width: 600px) {
+  .container {
+    grid-template-rows: 15% auto 5%;
+  }
+  .photo {
+    width: 40%;
+    height: auto;
+    left: 6vw;
+    bottom: 13vh;
+  }
+  .text-pres {
+    width: 90%;
+  }
+  .text {
+    font-size: small;
+  }
+  .background-rect-index {
+    height: 130px;
+    top: 40%;
+  }
+  .footer {
+    font-size: 0.7rem;
+  }
+}
+
+/* Parameters for big laptops */
+@media only screen and (min-width: 992px) {
+  .container {
+    grid-template-rows: 25% auto 10%;
+  }
+  .photo {
+    width: 130px;
+    height: 130px;
+    left: 55px;
+    bottom: 60px;
+  }
+  .text-pres {
+    width: 80%;
+  }
+  .text {
+    font-size: medium;
+  }
+  .background-rect-index {
+    top: 40%;
+    height: 160px;
+  }
+  .footer {
+    font-size: small;
+  }
+}

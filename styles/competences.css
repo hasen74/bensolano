@@ -1,0 +1,149 @@
+@keyframes skills-icons-anim {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.competences-container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    'skills'
+    'description';
+}
+
+.competences-icons-container {
+  grid-area: skills;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.competences-img {
+  animation: skills-icons-anim 3s linear 0s infinite normal forwards;
+  animation-play-state: paused;
+}
+
+.competences-img:hover {
+  animation-play-state: running;
+}
+
+.competences-description-container {
+  grid-area: description;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.competences-description {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.competences-description p {
+  animation: entrance 1s ease 0s 1 normal forwards;
+}
+
+.background-rect-competences {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  isolation: isolate;
+  z-index: 1;
+  background-color: black;
+  animation: slideUp 1s ease 0s 1 normal forwards;
+}
+
+/* Parameters for phones */
+@media only screen and (max-width: 600px) {
+  .competences-icons-container {
+    height: 70%;
+    gap: 4vh;
+    padding: 8vh;
+    row-gap: 1vh;
+  }
+  .competences-img {
+    height: auto;
+    max-width: 12vw;
+  }
+  .background-rect-competences {
+    top: 41vh;
+    height: 90px;
+    position: absolute;
+  }
+  .competences-description {
+    top: 15px;
+    font-size: large;
+  }
+}
+
+/* Parameters for medium devices */
+@media only screen and (min-width: 600px) {
+  .competences-icons-container {
+    height: 70%;
+    top: 20%;
+    padding: 20px 160px;
+    gap: 20px;
+  }
+  .competences-img {
+    height: 40px;
+    width: 40px;
+  }
+  .background-rect-competences {
+    top: 55%;
+    height: 90px;
+  }
+  .competences-description {
+    top: 15px;
+    font-size: large;
+  }
+}
+
+/* Parameters for big laptops */
+@media only screen and (min-width: 992px) {
+  .competences-icons-container {
+    height: 70%;
+    padding: 20px 160px;
+    gap: 30px;
+    top: 0px;
+  }
+  .competences-img {
+    height: 60px;
+    width: 60px;
+  }
+  .background-rect-competences {
+    top: 60%;
+    height: 120px;
+  }
+  .competences-description {
+    height: 60%;
+    top: 15px;
+    font-size: xx-large;
+  }
+}
