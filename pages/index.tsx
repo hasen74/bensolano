@@ -3,13 +3,9 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { NextPage } from 'next'
+import localFont from '@next/font/local'
 
-import { Khula } from '@next/font/google'
-
-const khula = Khula({
-  weight: '400',
-  subsets: ['latin']
-})
+const khula = localFont({src: './Khula-Regular.ttf' })
 
 // Index/presentation page
 const Home: NextPage = () => {
@@ -32,13 +28,13 @@ const Home: NextPage = () => {
             <div className="text-pres animated">
               <div className="text">
                 <p className={`text ${khula.className}`}>
-                  Jeune développeur fullstack en début de cursus à l'ETNA, ancien danseur en reconversion, je suis à la
+                  Développeur fullstack en début de cursus à l'ETNA, ancien danseur en reconversion, je suis à la
                   recherche d'une alternance pour la mi-mars 2023. Je suis particulièrement attiré par le développement
                   back et impatient de découvrir l'administration systèmes et la sécurité.
                 </p>
               </div>
-              <div className="background-rect-index"></div>
             </div>
+            <div className="background-rect-index"></div>
           </div>
         </div>
         <Footer />

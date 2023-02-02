@@ -37,6 +37,7 @@
   text-align: left;
   align-items: center;
   font-weight: bold;
+  background-color: #f5f7fc;
 }
 
 .socials-container {
@@ -92,6 +93,7 @@
   grid-area: menu;
   display: flex;
   justify-content: center;
+  background-color: #f5f7fc;
 }
 
 .menu nav {

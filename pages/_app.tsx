@@ -5,12 +5,9 @@ import '../styles/competences.css'
 import '../styles/projets.css'
 import type { AppProps } from 'next/app'
 
-import { Oswald } from '@next/font/google'
+import localFont from '@next/font/local'
 
-const oswald = Oswald({
-  weight: '400',
-  subsets: ['latin'],
-})
+const oswald = localFont({src: './Oswald-Regular.ttf' })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

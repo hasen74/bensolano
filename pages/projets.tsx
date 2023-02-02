@@ -5,12 +5,9 @@ import Navbar from '../components/Navbar'
 import Cards from '../projects-data.json'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Hind_Vadodara } from '@next/font/google'
+import localFont from '@next/font/local'
 
-const hindVadodara = Hind_Vadodara({
-  weight: '400',
-  subsets: ['latin'],
-})
+const hindVadodara = localFont({src: './HindVadodara-Regular.ttf' })
 
 // Projects page
 // Map method used to display as many cards as there are objects in the json file */

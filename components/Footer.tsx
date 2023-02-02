@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Footer() {
   return (
     <div className="footer">
-      <p>Copyright 2023 Benjamin Solano</p>
+      <p>© 2023 Benjamin Solano</p>
     </div>
 
   )

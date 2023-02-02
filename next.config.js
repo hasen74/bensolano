@@ -1,10 +1,6 @@
-const pathPrefix = process.env.DEPLOY_TARGET === 'gh-pages'
-  ? '/benjaminsolano'
-  : '';
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+}
 
-module.exports = {
-  assetPrefix: pathPrefix,
-  env: {
-    pathPrefix,
-  },
-};
+module.exports = nextConfig

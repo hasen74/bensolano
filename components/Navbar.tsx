@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="menu">
         <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           <div className="nav-elements">
-            <Link href="/index">PRESENTATION</Link>
+            <Link href="/">PRESENTATION</Link>
           </div>
           <div className="nav-elements">
             <Link href="/competences">COMPETENCES</Link>

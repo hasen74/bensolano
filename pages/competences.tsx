@@ -4,12 +4,9 @@ import Image from 'next/image'
 import { useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import { Khula } from '@next/font/google'
+import localFont from '@next/font/local'
 
-const khula = Khula({
-  weight: '400',
-  subsets: ['latin'],
-})
+const khula = localFont({src: './Khula-Regular.ttf' })
 
 // Skills page
 const Competences: NextPage = () => {
