@@ -55,6 +55,7 @@ a:active {
   isolation: isolate;
   z-index: 1;
   animation: entrance 1s ease 0s 1 normal forwards;
+  overflow-x: scroll;
 }
 
 .presentation {
@@ -167,8 +168,7 @@ a:active {
     grid-template-rows: 15% auto 5%;
   }
   .photo {
-    width: 40%;
-    height: auto;
+    max-width: 33%;
     left: 6vw;
     bottom: 13vh;
   }
@@ -193,8 +193,6 @@ a:active {
     grid-template-rows: 25% auto 10%;
   }
   .photo {
-    width: 33%;
-    height: auto;
     left: 7vw;
   }
   .text-pres {
