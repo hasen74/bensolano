@@ -6,6 +6,7 @@ html,
 body {
   margin: 0;
   background-color: #f5f7fc;
+  overflow-x: hidden;
 }
 
 button {
@@ -55,7 +56,6 @@ a:active {
   isolation: isolate;
   z-index: 1;
   animation: entrance 1s ease 0s 1 normal forwards;
-  overflow-x: scroll;
 }
 
 .presentation {

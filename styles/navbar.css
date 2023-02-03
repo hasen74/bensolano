@@ -56,21 +56,11 @@
 
 .burger-button-socials {
   display: none;
-  /*
-  position: absolute;
-  right: 1.9vw;
-  top: 3vh;
-  align-items: right; */
 }
 
 .burger-button-socials.open {
   visibility: hidden;
 }
-
-/* .nav-socials.open {
-  visibility: visible;
-  animation: socialsAnim 1s ease 0s 1 normal forwards;
-} */
 
 .nav-socials {
   visibility: visible;
