@@ -7,7 +7,7 @@ import type { AppProps } from 'next/app'
 
 import localFont from '@next/font/local'
 
-const oswald = localFont({src: './Oswald-Regular.ttf' })
+const oswald = localFont({src: './Oswald-Regular.ttf', display: 'swap' })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

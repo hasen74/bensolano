@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import localFont from '@next/font/local'
 
-const khula = localFont({src: './Khula-Regular.ttf' })
+const khula = localFont({src: './Khula-Regular.ttf', display: 'swap' })
 
 // Skills page
 const Competences: NextPage = () => {

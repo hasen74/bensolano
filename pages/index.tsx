@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import { NextPage } from 'next'
 import localFont from '@next/font/local'
 
-const khula = localFont({src: './Khula-Regular.ttf' })
+const khula = localFont({src: './Khula-Regular.ttf' , display: 'swap'})
 
 // Index/presentation page
 const Home: NextPage = () => {

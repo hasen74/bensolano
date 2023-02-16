@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import localFont from '@next/font/local'
 
-const hindVadodara = localFont({src: './HindVadodara-Regular.ttf' })
+const hindVadodara = localFont({src: './HindVadodara-Regular.ttf', display: 'swap' })
 
 // Projects page
 // Map method used to display as many cards as there are objects in the json file */
