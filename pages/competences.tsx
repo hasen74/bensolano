@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import localFont from '@next/font/local'
 
-const khula = localFont({src: './Khula-Regular.ttf', display: 'swap' })
+const khula = localFont({ src: './Khula-Regular.ttf', display: 'swap' })
 
 // Skills page
 const Competences: NextPage = () => {
@@ -28,23 +28,7 @@ const Competences: NextPage = () => {
         <Navbar />
         <div className="main">
           <div className="competences-container">
-            <div className="competences-icons-container">
-              <Image
-                onClick={() => setSelected('html5')}
-                className="competences-img html5"
-                src="/skills/html5.svg"
-                width={60}
-                height={60}
-                alt="HTML5"
-              />
-              <Image
-                onClick={() => setSelected('css3')}
-                className="competences-img css3"
-                src="/skills/css3.svg"
-                width={60}
-                height={60}
-                alt="Css3"
-              />
+            <div className="competences-icons-containers skills-back">
               <Image
                 onClick={() => setSelected('javascript')}
                 className="competences-img javascript"
@@ -62,28 +46,12 @@ const Competences: NextPage = () => {
                 alt="TypeScript"
               />
               <Image
-                onClick={() => setSelected('c')}
-                className="competences-img c"
-                src="/skills/c.svg"
+                onClick={() => setSelected('nodejs')}
+                className="competences-img nodejs"
+                src="/skills/nodejs.svg"
                 width={60}
                 height={60}
-                alt="C"
-              />
-              <Image
-                onClick={() => setSelected('react')}
-                className="competences-img react"
-                src="/skills/react.svg"
-                width={60}
-                height={60}
-                alt="React"
-              />
-              <Image
-                onClick={() => setSelected('nextjs')}
-                className="competences-img nextjs"
-                src="/skills/nextjs.svg"
-                width={60}
-                height={60}
-                alt="NextJS"
+                alt="NodeJS"
               />
               <Image
                 onClick={() => setSelected('nestjs')}
@@ -92,6 +60,25 @@ const Competences: NextPage = () => {
                 width={60}
                 height={60}
                 alt="NestJS"
+              />
+            </div>
+            <div className="competences-description-containers competences-description-back">
+              <div className={`competences-description`}>
+                {selected === 'allskills' && <p>Web back-end</p>}
+                {selected === 'javascript' && <p>JavaScript</p>}
+                {selected === 'typescript' && <p>Typescript</p>}
+                {selected === 'nodejs' && <p>NodeJS</p>}
+                {selected === 'nestjs' && <p>Nest.JS</p>}
+              </div>
+            </div>
+            <div className="competences-icons-containers competences-icons-bdd">
+              <Image
+                onClick={() => setSelected('mysql')}
+                className="competences-img mysql"
+                src="/skills/mysql.svg"
+                width={60}
+                height={60}
+                alt="MySQL"
               />
               <Image
                 onClick={() => setSelected('sequelize')}
@@ -110,6 +97,84 @@ const Competences: NextPage = () => {
                 alt="Prisma"
               />
               <Image
+                onClick={() => setSelected('mongodb')}
+                className="competences-img mongodb"
+                src="/skills/mongodb.svg"
+                width={60}
+                height={60}
+                alt="MongoDB"
+              />
+            </div>
+            <div className="competences-description-containers competences-description-bdd">
+              <div className={`competences-description`}>
+                {selected === 'allskills' && <p>Bases de données</p>}
+                {selected === 'mysql' && <p>MySQL</p>}
+                {selected === 'sequelize' && <p>Sequelize</p>}
+                {selected === 'prisma' && <p>Prisma</p>}
+                {selected === 'mongodb' && <p>MongoDB</p>}
+              </div>
+            </div>
+            <div className="competences-icons-containers competences-icons-algo">
+              <Image
+                onClick={() => setSelected('c')}
+                className="competences-img c"
+                src="/skills/c.svg"
+                width={60}
+                height={60}
+                alt="C"
+              />
+              <Image
+                onClick={() => setSelected('python')}
+                className="competences-img python"
+                src="/skills/python.png"
+                width={60}
+                height={60}
+                alt="Python"
+              />
+            </div>
+            <div className="competences-description-containers competences-description-algo">
+              <div className={`competences-description`}>
+                {selected === 'allskills' && <p>Algorithmie</p>}
+                {selected === 'c' && <p>C</p>}
+                {selected === 'python' && <p>Python</p>}
+              </div>
+            </div>
+            <div className="competences-icons-containers competences-icons-front">
+              <Image
+                onClick={() => setSelected('html5')}
+                className="competences-img html5"
+                src="/skills/html5.svg"
+                width={60}
+                height={60}
+                alt="HTML5"
+              />
+              <Image
+                onClick={() => setSelected('css3')}
+                className="competences-img css3"
+                src="/skills/css3.svg"
+                width={60}
+                height={60}
+                alt="Css3"
+              />
+              <Image
+                onClick={() => setSelected('react')}
+                className="competences-img react"
+                src="/skills/react.svg"
+                width={60}
+                height={60}
+                alt="React"
+              />
+              <Image
+                onClick={() => setSelected('nextjs')}
+                className="competences-img nextjs"
+                src="/skills/nextjs.svg"
+                width={60}
+                height={60}
+                alt="NextJS"
+              />
+            </div>
+            <div className="competences-icons-containers competences-icons-tools">
+              <Image
                 onClick={() => setSelected('git')}
                 className="competences-img git"
                 src="/skills/git.svg"
@@ -126,25 +191,23 @@ const Competences: NextPage = () => {
                 alt="Bash"
               />
             </div>
-            <div className="competences-description-container">
-              <div className={`competences-description ${khula.className}`}>
-              {selected === 'allskills' && <p>Sélectionnez une compétence</p>}
-              {selected === 'html5' && <p>HTML5</p>}
-              {selected === 'css3' && <p>CSS3</p>}
-              {selected === 'javascript' && <p>JavaScript</p>}
-              {selected === 'typescript' && <p>Typescript</p>}
-              {selected === 'c' && <p>C</p>}
-              {selected === 'react' && <p>React</p>}
-              {selected === 'nextjs' && <p>Next.JS</p>}
-              {selected === 'nestjs' && <p>Nest.JS</p>}
-              {selected === 'sequelize' && <p>Sequelize</p>}
-              {selected === 'prisma' && <p>Prisma</p>}
-              {selected === 'git' && <p>Git</p>}
-              {selected === 'bash' && <p>Bash</p>}
+            <div className="competences-description-containers competences-description-front">
+              <div className={`competences-description`}>
+                {selected === 'allskills' && <p>Web front-end</p>}
+                {selected === 'html5' && <p>HTML5</p>}
+                {selected === 'css3' && <p>CSS3</p>}
+                {selected === 'react' && <p>React</p>}
+                {selected === 'nextjs' && <p>Next.JS</p>}
+              </div>
             </div>
+            <div className="competences-description-containers competences-description-tools">
+              <div className={`competences-description`}>
+                {selected === 'allskills' && <p>Outils</p>}
+                {selected === 'git' && <p>Git</p>}
+                {selected === 'bash' && <p>Bash</p>}
+              </div>
             </div>
           </div>
-          <div className="background-rect-competences"></div>
         </div>
         <Footer />
       </main>

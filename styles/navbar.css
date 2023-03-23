@@ -32,7 +32,7 @@
 }
 
 .name {
-  grid-area: name;
+  grid-area: name;  
   display: flex;
   text-align: left;
   align-items: center;
@@ -91,8 +91,7 @@
 }
 
 .burger-button-menu {
-  position: absolute;
-  top: 11.5vh;
+  position: relative;
   align-items: center;
 }
 
@@ -136,9 +135,9 @@
     position: static;
     visibility: hidden;
   }*/
-  /*.burger-button-socials {
+  /* .burger-button-socials {
     display: block;
-  }*/
+  } */
   .tooltip .tooltiptext {
     width: 40px;
     padding: 0 0;

@@ -6,7 +6,8 @@ html,
 body {
   margin: 0;
   background-color: #f5f7fc;
-  overflow-x: hidden;
+  height: auto;
+  /* overflow-x: hidden; */
 }
 
 button {
@@ -37,8 +38,8 @@ a:active {
   color: black;
   padding: 5px;
   height: 100vh;
-  width: 100vw;
-  grid-template-columns: auto;
+  width: 98vw;
+  /* grid-template-columns: auto; */
   grid-template-areas:
     'header'
     'main'
@@ -47,7 +48,9 @@ a:active {
 }
 
 .main {
+  height: 100%;
   grid-area: main;
+  padding: 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,6 +103,7 @@ a:active {
   color: white;
   animation: entrance 3s ease 0s 1 normal forwards;
 }
+
 .background-rect-index {
   position: absolute;
   right: 0;
@@ -110,6 +114,7 @@ a:active {
 }
 
 .footer {
+  grid-area: footer;
   display: flex;
   align-items: center;
   justify-content: center;
