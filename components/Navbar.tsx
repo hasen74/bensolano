@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import ModalBox from './ModalBox'
+import ModalMail from './ModalMail'
 
 // Navbar component
 // UseState hook used to control hamburger and social menus opening and closing in phone mode
 export default function Navbar() {
-  const [isSocialsOpen, setIsSocialsOpen] = useState(false)
+
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
@@ -28,12 +28,13 @@ export default function Navbar() {
         </nav>
         <div className={`burger-button-menu ${isMenuOpen ? 'open' : ''}`}>
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <Image src="/hamburger.png" width="20" height="20" alt="menu"></Image>
+            <div className="text-menu">Menu</div>
+            {/* <Image src="/hamburger.png" width="20" height="20" alt="menu"></Image> */}
           </button>
         </div>
       </div>
       <div className="socials-container">
-        <nav className={`nav-socials ${isSocialsOpen ? 'open' : ''}`}>
+        <nav className="nav-socials">
           <div className="socials socials-cv">
             <a href="/CV_Benjamin_Solano_Alternance_Developpeur.pdf" target="_blank" rel="noreferrer">
               <Image className="socials-img socials-img-cv" src="/cv.png" width={30} height={30} alt="cv" />
@@ -43,7 +44,7 @@ export default function Navbar() {
             </a>
           </div>
           <div className="socials socials-contact">
-            <ModalBox
+            <ModalMail
               element={
                 <Image
                   className="socials-img socials-img-contact"
@@ -53,6 +54,7 @@ export default function Navbar() {
                   alt="email"
                 />
               }
+              phone="07.85.90.07.18"
               email="solano_b@etna-alternance.net"
             />
           </div>
@@ -79,11 +81,6 @@ export default function Navbar() {
             </a>
           </div>
         </nav>
-        <div className="burger-button-socials">
-          <button onClick={() => setIsSocialsOpen(!isSocialsOpen)}>
-            <p>Contact</p>
-          </button>
-        </div>
       </div>
     </div>
   )
