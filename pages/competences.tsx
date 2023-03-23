@@ -63,7 +63,7 @@ const Competences: NextPage = () => {
               />
             </div>
             <div className="competences-description-containers competences-description-back">
-              <div className={`competences-description`}>
+              <div className={`competences-description ${khula.className}`}>
                 {selected === 'allskills' && <p>Web back-end</p>}
                 {selected === 'javascript' && <p>JavaScript</p>}
                 {selected === 'typescript' && <p>Typescript</p>}
@@ -106,7 +106,7 @@ const Competences: NextPage = () => {
               />
             </div>
             <div className="competences-description-containers competences-description-bdd">
-              <div className={`competences-description`}>
+              <div className={`competences-description ${khula.className}`}>
                 {selected === 'allskills' && <p>Bases de données</p>}
                 {selected === 'mysql' && <p>MySQL</p>}
                 {selected === 'sequelize' && <p>Sequelize</p>}
@@ -133,7 +133,7 @@ const Competences: NextPage = () => {
               />
             </div>
             <div className="competences-description-containers competences-description-algo">
-              <div className={`competences-description`}>
+              <div className={`competences-description ${khula.className}`}>
                 {selected === 'allskills' && <p>Algorithmie</p>}
                 {selected === 'c' && <p>C</p>}
                 {selected === 'python' && <p>Python</p>}
@@ -192,7 +192,7 @@ const Competences: NextPage = () => {
               />
             </div>
             <div className="competences-description-containers competences-description-front">
-              <div className={`competences-description`}>
+              <div className={`competences-description ${khula.className}`}>
                 {selected === 'allskills' && <p>Web front-end</p>}
                 {selected === 'html5' && <p>HTML5</p>}
                 {selected === 'css3' && <p>CSS3</p>}
@@ -201,7 +201,7 @@ const Competences: NextPage = () => {
               </div>
             </div>
             <div className="competences-description-containers competences-description-tools">
-              <div className={`competences-description`}>
+              <div className={`competences-description ${khula.className}`}>
                 {selected === 'allskills' && <p>Outils</p>}
                 {selected === 'git' && <p>Git</p>}
                 {selected === 'bash' && <p>Bash</p>}
