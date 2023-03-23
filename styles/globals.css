@@ -50,7 +50,6 @@ a:active {
 .main {
   height: 100%;
   grid-area: main;
-  padding: 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,58 +59,6 @@ a:active {
   isolation: isolate;
   z-index: 1;
   animation: entrance 1s ease 0s 1 normal forwards;
-}
-
-.presentation {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  grid-template-columns: 33% 67%;
-  grid-template-areas: 'photo-pres text-pres';
-}
-
-.photo-pres {
-  grid-area: photo-pres;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.photo {
-  position: relative;
-  z-index: 2;
-  animation: entrance 2s ease 0s 1 normal forwards;
-}
-.text-pres {
-  grid-area: text-pres;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  height: 90%;
-  align-items: center;
-}
-.text {
-  position: relative;
-  z-index: 2;
-  text-align: justify;
-}
-.text p {
-  color: white;
-  animation: entrance 3s ease 0s 1 normal forwards;
-}
-
-.background-rect-index {
-  position: absolute;
-  right: 0;
-  isolation: isolate;
-  z-index: 1;
-  width: 100vw;
-  background-color: black;
 }
 
 .footer {
@@ -130,38 +77,7 @@ a:active {
   }
   .main {
     font-size: 1rem;
-  }
-  .presentation {
-    grid-template-rows: 25% 65%;
-    grid-template-columns: auto;
-    grid-template-areas: 
-    'photo-pres' 
-    'text-pres';
-  }
-  .photo-pres {
-    align-items: flex-end;
-  }
-  .photo {
-    position: absolute;
-    max-width: 29vw;
-    height: auto;
-  }
-  .text-pres {
-    height: 100%;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .text {
-    font-size: 1.2rem;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-  }
-  .background-rect-index {
-    right: 0;
-    left: 0;
-    bottom: 13vh;
-    height: 56vh;
+    padding: 5px 0;
   }
   .footer {
     font-size: xx-small;
@@ -173,20 +89,8 @@ a:active {
   .container {
     grid-template-rows: 15% auto 5%;
   }
-  .photo {
-    max-width: 33%;
-    left: 6vw;
-    bottom: 13vh;
-  }
-  .text-pres {
-    width: 90%;
-  }
-  .text {
-    font-size: small;
-  }
-  .background-rect-index {
-    height: 20vh;
-    top: 25vh;
+  .main {
+    padding: 10px 0px;
   }
   .footer {
     font-size: 0.7rem;
@@ -198,22 +102,8 @@ a:active {
   .container {
     grid-template-rows: 25% auto 10%;
   }
-  .photo {
-    left: 7vw;
-  }
-  .text-pres {
-    width: 80%;
-  }
-  .text {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 8vh;
-    font-size: medium;
-  }
-  .background-rect-index {
-    top: 15vh;
-    height: 25vh;
+  .main {
+    padding: 20px 0px;
   }
   .footer {
     font-size: small;
