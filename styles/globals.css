@@ -87,7 +87,7 @@ a:active {
 /* Parameters for medium devices */
 @media only screen and (min-width: 600px) {
   .container {
-    grid-template-rows: 15% auto 5%;
+    grid-template-rows: 2.5fr 5fr 1fr;
   }
   .main {
     padding: 10px 0px;
@@ -100,7 +100,7 @@ a:active {
 /* Parameters for big laptops */
 @media only screen and (min-width: 992px) {
   .container {
-    grid-template-rows: 25% auto 10%;
+    grid-template-rows: 3fr 6fr 1fr;
   }
   .main {
     padding: 20px 0px;
