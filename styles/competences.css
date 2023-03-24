@@ -55,8 +55,24 @@
   transition: 700ms ease-in-out;
 }
 
-.competences-container.open {
+.competences-container.back {
   --row1: 3fr
+}
+
+.competences-container.bdd {
+  --row2: 3fr
+}
+
+.competences-container.algo {
+  --row3: 3fr
+}
+
+.competences-container.front {
+  --row4: 3fr
+}
+
+.competences-container.tools {
+  --row5: 3fr
 }
 
 .competences-icons-containers {
@@ -92,6 +108,10 @@
     margin: 0;
 }
 
+.inline {
+  display: inline-block
+}
+
 .competences-icons-back {
   grid-area: skills-back;
 }
@@ -119,6 +139,16 @@
 
 .competences-img:hover {
   animation-play-state: running;
+  cursor: pointer;
+}
+
+/* .img-card {
+  animation: skills-icons-anim 3s linear 0s infinite normal forwards;
+  animation-play-state: paused;
+} */
+
+.img-card:hover {
+  /* animation-play-state: running; */
   cursor: pointer;
 }
 

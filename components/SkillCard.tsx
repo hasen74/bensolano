@@ -8,7 +8,8 @@ interface Skill {
     projets: {
       titre: string
       lien: string
-    }[]
+    }[],
+    category: string
   }
 }
 
@@ -19,23 +20,23 @@ export default function SkillCard(props: any) {
     return null
   }
 
-  const { image, description, projets } = skill
+  const { category, image, description, projets } = skill
 
   return (
     <div className="competences-text">
       <Image
-        className="competences-img img-card"
+        className="img-card"
         src={image}
         onClick={() => {
-          props.setIsOpen(false)
-          props.setSelected('allskillsback')
+          props.setContainerSize('')
+          props.setSelected(category)
         }}
         alt="Skill Logo"
         width={100}
         height={100}
       />
       <p>{description}</p>
-      <p>Projets (github) → </p>
+      <p className="inline">Projets (github) → </p>
       <ul>
         {projets.map(({ titre, lien }) => (
           <li key={titre}>
