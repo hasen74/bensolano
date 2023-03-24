@@ -8,12 +8,14 @@ import localFont from '@next/font/local'
 
 const khula = localFont({ src: './Khula-Regular.ttf', display: 'swap' })
 
-// Skills page
 const Competences: NextPage = () => {
-  // UseState hook to allow toggle between the different skills
-  // UseState value is changed on click of the different images
-  // Skill name is displayed accordingly
   const [selected, setSelected] = useState('allskills')
+  const [isJavaScript, setIsJavaScript] = useState(false);
+
+  const toggleGrid = () => {
+    setIsJavaScript(!isJavaScript);
+  };
+
 
   return (
     <>
@@ -27,10 +29,10 @@ const Competences: NextPage = () => {
       <main className="container">
         <Navbar />
         <div className="main">
-          <div className="competences-container">
-            <div className="competences-icons-containers skills-back">
+          <div className={`competences-container ${isJavaScript ? 'javascript' : ''}`}>
+            <div className="competences-icons-containers competences-icons-back">
               <Image
-                onClick={() => setSelected('javascript')}
+                onClick={toggleGrid}
                 className="competences-img javascript"
                 src="/skills/javascript.svg"
                 width={60}

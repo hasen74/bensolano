@@ -31,17 +31,28 @@
 }
 
 .competences-container {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 38% 38%;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas:
+  --areas: 
     'text-back skills-back'
     'text-bdd skills-bdd'
     'text-algo skills-algo'
-    'text-front skills-front '
+    'text-front skills-front'
     'text-tools skills-tools';
+  --columns: repeat(2, 38%);
+  --row : 1fr;
+
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 38%);
+  grid-template-rows: var(--row) 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    var(--areas);
   justify-content: center;
+
+  transition: 300ms;
+}
+
+.competences-container:hover {
+  --row: 5fr
 }
 
 .competences-icons-containers {
@@ -58,19 +69,19 @@
 }
 
 .competences-icons-bdd {
-  grid-area: skills-bdd
+  grid-area: skills-bdd;
 }
 
 .competences-icons-algo {
-  grid-area: skills-algo
+  grid-area: skills-algo;
 }
 
 .competences-icons-front {
-  grid-area: skills-front
+  grid-area: skills-front;
 }
 
 .competences-icons-tools {
-  grid-area: skills-tools
+  grid-area: skills-tools;
 }
 
 .competences-img {
