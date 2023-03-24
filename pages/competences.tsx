@@ -9,13 +9,26 @@ import localFont from '@next/font/local'
 const khula = localFont({ src: './Khula-Regular.ttf', display: 'swap' })
 
 const Competences: NextPage = () => {
-  const [selected, setSelected] = useState('allskills')
-  const [isJavaScript, setIsJavaScript] = useState(false);
+  const [selectedBack, setSelectedBack] = useState('allskillsback')
+  const [selectedBdd, setSelectedBdd] = useState('allskillsbdd')
+  const [selectedAlgo, setSelectedAlgo] = useState('allskillsalgo')
+  const [selectedFront, setSelectedFront] = useState('allskillsfront')
+  const [selectedTools, setSelectedTools] = useState('allskillstools')
 
-  const toggleGrid = () => {
-    setIsJavaScript(!isJavaScript);
-  };
-
+  const SkillsBack = () => {
+    switch (selectedBack) {
+      case 'javascript':
+        return <div>js</div>
+      case 'typescript':
+        return <div>ts</div>
+      case 'nodejs':
+        return <div>node</div>
+      case 'nestjs':
+        return <div>nest</div>
+      default:
+        return null
+    }
+  }
 
   return (
     <>
@@ -29,53 +42,58 @@ const Competences: NextPage = () => {
       <main className="container">
         <Navbar />
         <div className="main">
-          <div className={`competences-container ${isJavaScript ? 'javascript' : ''}`}>
+          <div className={`competences-container ${selectedBack}`}>
             <div className="competences-icons-containers competences-icons-back">
-              <Image
-                onClick={toggleGrid}
-                className="competences-img javascript"
-                src="/skills/javascript.svg"
-                width={60}
-                height={60}
-                alt="JavaScript"
-              />
-              <Image
-                onClick={() => setSelected('typescript')}
-                className="competences-img typescript"
-                src="/skills/typescript.svg"
-                width={60}
-                height={60}
-                alt="TypeScript"
-              />
-              <Image
-                onClick={() => setSelected('nodejs')}
-                className="competences-img nodejs"
-                src="/skills/nodejs.svg"
-                width={60}
-                height={60}
-                alt="NodeJS"
-              />
-              <Image
-                onClick={() => setSelected('nestjs')}
-                className="competences-img nestjs"
-                src="/skills/nestjs.svg"
-                width={60}
-                height={60}
-                alt="NestJS"
-              />
+              {selectedBack === 'allskillsback' && (
+                <div className="icons">
+                  <Image
+                    onClick={() => setSelectedBack('javascript')}
+                    className="competences-img javascript"
+                    src="/skills/javascript.svg"
+                    width={60}
+                    height={60}
+                    alt="JavaScript"
+                  />
+                  <Image
+                    onClick={() => setSelectedBack('typescript')}
+                    className="competences-img typescript"
+                    src="/skills/typescript.svg"
+                    width={60}
+                    height={60}
+                    alt="TypeScript"
+                  />
+                  <Image
+                    onClick={() => setSelectedBack('nodejs')}
+                    className="competences-img nodejs"
+                    src="/skills/nodejs.svg"
+                    width={60}
+                    height={60}
+                    alt="NodeJS"
+                  />
+                  <Image
+                    onClick={() => setSelectedBack('nestjs')}
+                    className="competences-img nestjs"
+                    src="/skills/nestjs.svg"
+                    width={60}
+                    height={60}
+                    alt="NestJS"
+                  />
+                </div>
+              )}
+              <div>{SkillsBack()}</div>
             </div>
             <div className="competences-description-containers competences-description-back">
               <div className={`competences-description ${khula.className}`}>
-                {selected === 'allskills' && <p>Web back-end</p>}
-                {selected === 'javascript' && <p>JavaScript</p>}
-                {selected === 'typescript' && <p>Typescript</p>}
-                {selected === 'nodejs' && <p>NodeJS</p>}
-                {selected === 'nestjs' && <p>Nest.JS</p>}
+                {selectedBack === 'allskillsback' && <p>Web back-end</p>}
+                {selectedBack === 'javascript' && <p>JavaScript</p>}
+                {selectedBack === 'typescript' && <p>Typescript</p>}
+                {selectedBack === 'nodejs' && <p>NodeJS</p>}
+                {selectedBack === 'nestjs' && <p>Nest.JS</p>}
               </div>
             </div>
             <div className="competences-icons-containers competences-icons-bdd">
               <Image
-                onClick={() => setSelected('mysql')}
+                onClick={() => setSelectedBdd('mysql')}
                 className="competences-img mysql"
                 src="/skills/mysql.svg"
                 width={60}
@@ -83,7 +101,7 @@ const Competences: NextPage = () => {
                 alt="MySQL"
               />
               <Image
-                onClick={() => setSelected('sequelize')}
+                onClick={() => setSelectedBdd('sequelize')}
                 className="competences-img sequelize"
                 src="/skills/sequelize.svg"
                 width={60}
@@ -91,7 +109,7 @@ const Competences: NextPage = () => {
                 alt="Sequelize"
               />
               <Image
-                onClick={() => setSelected('prisma')}
+                onClick={() => setSelectedBdd('prisma')}
                 className="competences-img prisma"
                 src="/skills/prisma.svg"
                 width={60}
@@ -99,7 +117,7 @@ const Competences: NextPage = () => {
                 alt="Prisma"
               />
               <Image
-                onClick={() => setSelected('mongodb')}
+                onClick={() => setSelectedBdd('mongodb')}
                 className="competences-img mongodb"
                 src="/skills/mongodb.svg"
                 width={60}
@@ -109,16 +127,16 @@ const Competences: NextPage = () => {
             </div>
             <div className="competences-description-containers competences-description-bdd">
               <div className={`competences-description ${khula.className}`}>
-                {selected === 'allskills' && <p>Bases de données</p>}
-                {selected === 'mysql' && <p>MySQL</p>}
-                {selected === 'sequelize' && <p>Sequelize</p>}
-                {selected === 'prisma' && <p>Prisma</p>}
-                {selected === 'mongodb' && <p>MongoDB</p>}
+                {selectedBdd === 'allskillsbdd' && <p>Bases de données</p>}
+                {selectedBdd === 'mysql' && <p>MySQL</p>}
+                {selectedBdd === 'sequelize' && <p>Sequelize</p>}
+                {selectedBdd === 'prisma' && <p>Prisma</p>}
+                {selectedBdd === 'mongodb' && <p>MongoDB</p>}
               </div>
             </div>
             <div className="competences-icons-containers competences-icons-algo">
               <Image
-                onClick={() => setSelected('c')}
+                onClick={() => setSelectedAlgo('c')}
                 className="competences-img c"
                 src="/skills/c.svg"
                 width={60}
@@ -126,7 +144,7 @@ const Competences: NextPage = () => {
                 alt="C"
               />
               <Image
-                onClick={() => setSelected('python')}
+                onClick={() => setSelectedAlgo('python')}
                 className="competences-img python"
                 src="/skills/python.png"
                 width={60}
@@ -136,14 +154,14 @@ const Competences: NextPage = () => {
             </div>
             <div className="competences-description-containers competences-description-algo">
               <div className={`competences-description ${khula.className}`}>
-                {selected === 'allskills' && <p>Algorithmie</p>}
-                {selected === 'c' && <p>C</p>}
-                {selected === 'python' && <p>Python</p>}
+                {selectedAlgo === 'allskillsalgo' && <p>Algorithmie</p>}
+                {selectedAlgo === 'c' && <p>C</p>}
+                {selectedAlgo === 'python' && <p>Python</p>}
               </div>
             </div>
             <div className="competences-icons-containers competences-icons-front">
               <Image
-                onClick={() => setSelected('html5')}
+                onClick={() => setSelectedFront('html5')}
                 className="competences-img html5"
                 src="/skills/html5.svg"
                 width={60}
@@ -151,7 +169,7 @@ const Competences: NextPage = () => {
                 alt="HTML5"
               />
               <Image
-                onClick={() => setSelected('css3')}
+                onClick={() => setSelectedFront('css3')}
                 className="competences-img css3"
                 src="/skills/css3.svg"
                 width={60}
@@ -159,7 +177,7 @@ const Competences: NextPage = () => {
                 alt="Css3"
               />
               <Image
-                onClick={() => setSelected('react')}
+                onClick={() => setSelectedFront('react')}
                 className="competences-img react"
                 src="/skills/react.svg"
                 width={60}
@@ -167,7 +185,7 @@ const Competences: NextPage = () => {
                 alt="React"
               />
               <Image
-                onClick={() => setSelected('nextjs')}
+                onClick={() => setSelectedFront('nextjs')}
                 className="competences-img nextjs"
                 src="/skills/nextjs.svg"
                 width={60}
@@ -175,9 +193,18 @@ const Competences: NextPage = () => {
                 alt="NextJS"
               />
             </div>
+            <div className="competences-description-containers competences-description-front">
+              <div className={`competences-description ${khula.className}`}>
+                {selectedFront === 'allskillsfront' && <p>Web front-end</p>}
+                {selectedFront === 'html5' && <p>HTML5</p>}
+                {selectedFront === 'css3' && <p>CSS3</p>}
+                {selectedFront === 'react' && <p>React</p>}
+                {selectedFront === 'nextjs' && <p>Next.JS</p>}
+              </div>
+            </div>
             <div className="competences-icons-containers competences-icons-tools">
               <Image
-                onClick={() => setSelected('git')}
+                onClick={() => setSelectedTools('git')}
                 className="competences-img git"
                 src="/skills/git.svg"
                 width={60}
@@ -185,7 +212,7 @@ const Competences: NextPage = () => {
                 alt="Git"
               />
               <Image
-                onClick={() => setSelected('bash')}
+                onClick={() => setSelectedTools('bash')}
                 className="competences-img bash"
                 src="/skills/bash.svg"
                 width={60}
@@ -193,20 +220,11 @@ const Competences: NextPage = () => {
                 alt="Bash"
               />
             </div>
-            <div className="competences-description-containers competences-description-front">
-              <div className={`competences-description ${khula.className}`}>
-                {selected === 'allskills' && <p>Web front-end</p>}
-                {selected === 'html5' && <p>HTML5</p>}
-                {selected === 'css3' && <p>CSS3</p>}
-                {selected === 'react' && <p>React</p>}
-                {selected === 'nextjs' && <p>Next.JS</p>}
-              </div>
-            </div>
             <div className="competences-description-containers competences-description-tools">
               <div className={`competences-description ${khula.className}`}>
-                {selected === 'allskills' && <p>Outils</p>}
-                {selected === 'git' && <p>Git</p>}
-                {selected === 'bash' && <p>Bash</p>}
+                {selectedTools === 'allskillstools' && <p>Outils</p>}
+                {selectedTools === 'git' && <p>Git</p>}
+                {selectedTools === 'bash' && <p>Bash</p>}
               </div>
             </div>
           </div>

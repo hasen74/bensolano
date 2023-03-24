@@ -38,21 +38,28 @@
     'text-front skills-front'
     'text-tools skills-tools';
   --columns: repeat(2, 38%);
-  --row : 1fr;
+  --row1 : 1fr;
+  --row2 : 1fr;
+  --row3 : 1fr;
+  --row4 : 1fr;
+  --row5 : 1fr;
 
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 38%);
-  grid-template-rows: var(--row) 1fr 1fr 1fr 1fr;
+  grid-template-rows: var(--row1) var(--row2) var(--row3) var(--row4) var(--row5);
   grid-template-areas:
     var(--areas);
   justify-content: center;
 
-  transition: 300ms;
+  transition: 700ms ease-in-out;
 }
 
-.competences-container:hover {
-  --row: 5fr
+.competences-container.javascript,
+.competences-container.typescript,
+.competences-container.nodejs,
+.competences-container.nestjs {
+  --row1: 5fr
 }
 
 .competences-icons-containers {
@@ -87,6 +94,7 @@
 .competences-img {
   animation: skills-icons-anim 3s linear 0s infinite normal forwards;
   animation-play-state: paused;
+  /* animation: entrance 1s ease 0s 1 normal forwards; */
 }
 
 .competences-img:hover {
@@ -201,8 +209,13 @@
   .competences-icons-containers {
     width: 100%;
     padding: 15px;
+  }
+
+  .icons {
+    display: flex;
     gap: 20px;
   }
+
   .competences-img {
     height: 45px;
     width: 45px;
