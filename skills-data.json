@@ -1,0 +1,214 @@
+[
+  {
+    "javascript": {
+      "image": "/skills/javascript.svg",
+      "description": "Principal langage appris dans le cadre de mes études.",
+      "projets": [
+        {
+          "titre": "RPG en ligne de commande",
+          "lien": "https://github.com/hasen74/thehyrulecastle"
+        }
+      ],
+      "category": "allskillsback"
+    }
+  },
+  {
+    "typescript": {
+      "image": "/skills/typescript.svg",
+      "description": "Tous mes derniers projets ont fait usage de TypeScript : développement d'API, projets front...",
+      "projets": [
+        {
+          "titre": "Site d'e-commerce (back et front)",
+          "lien": "https://github.com/hasen74/animalplayground"
+        }
+      ],
+      "category": "allskillsback"
+    }
+  },
+  {
+  "nodejs": {
+    "image": "/skills/nodejs.svg",
+    "description": "NodeJS constitue mon environnement de travail principal.",
+    "projets": [
+      {
+        "titre": "Site d'e-commerce",
+        "lien": "https://github.com/hasen74/animalplayground"
+      }
+    ],
+    "category": "allskillsback"
+  }
+},
+{
+  "nestjs": {
+    "image": "/skills/nestjs.svg",
+    "description": "NestJS a été ces derniers mois mon premier choix pour le développement d'API.",
+    "projets": [
+      {
+        "titre": "API avec RBAC sommaire pour application web évenementielle",
+        "lien": "https://github.com/hasen74/inclukathon/tree/main/api"
+      },
+      {
+        "titre": "API pour projet mobile d'émargement via QR Code",
+        "lien": "https://github.com/hasen74/codecampmobile-emargement"
+      }
+    ],
+    "category": "allskillsback"
+  }
+},
+{
+  "mongodb": {
+    "image": "/skills/mongodb.svg",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillsbdd"
+  }
+},
+{
+  "sequelize": {
+    "image": "/skills/sequelize.svg",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillsbdd"
+  }
+},
+{
+  "prisma": {
+    "image": "/skills/prisma.svg",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillsbdd"
+  }
+},
+{
+  "mysql": {
+    "image": "/skills/mysql.svg",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillsbdd"
+  }
+},
+{
+  "c": {
+    "image": "/skills/c.svg",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillsalgo"
+  }
+},
+{
+  "python": {
+    "image": "/skills/python.png",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillsalgo"
+  }
+},
+{
+  "html5": {
+    "image": "/skills/html5.svg",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillsfront"
+  }
+},
+{
+  "css3": {
+    "image": "/skills/css3.svg",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillsfront"
+  }
+},
+{
+  "react": {
+    "image": "/skills/react.svg",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillsfront"
+  }
+},
+{
+  "nextjs": {
+    "image": "/skills/nextjs.svg",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillsfront"
+  }
+},
+{
+  "git": {
+    "image": "/skills/git.svg",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillstools"
+  }
+},
+{
+  "bash": {
+    "image": "/skills/bash.svg",
+    "description": "",
+    "projets": [
+      {
+        "titre": "",
+        "lien": ""
+      }
+    ],
+    "category": "allskillstools"
+  }
+}
+]

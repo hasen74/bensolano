@@ -5,15 +5,18 @@ import { useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import localFont from '@next/font/local'
+import SkillCard from '../components/SkillCard'
 
-const khula = localFont({src: './Khula-Regular.ttf', display: 'swap' })
+const khula = localFont({ src: './Khula-Regular.ttf', display: 'swap' })
 
-// Skills page
 const Competences: NextPage = () => {
-  // UseState hook to allow toggle between the different skills
-  // UseState value is changed on click of the different images
-  // Skill name is displayed accordingly
-  const [selected, setSelected] = useState('allskills')
+  const [containerSize, setContainerSize] = useState('')
+
+  const [selectedBack, setSelectedBack] = useState('allskillsback')
+  const [selectedBdd, setSelectedBdd] = useState('allskillsbdd')
+  const [selectedAlgo, setSelectedAlgo] = useState('allskillsalgo')
+  const [selectedFront, setSelectedFront] = useState('allskillsfront')
+  const [selectedTools, setSelectedTools] = useState('allskillstools')
 
   return (
     <>
@@ -27,124 +30,302 @@ const Competences: NextPage = () => {
       <main className="container">
         <Navbar />
         <div className="main">
-          <div className="competences-container">
-            <div className="competences-icons-container">
-              <Image
-                onClick={() => setSelected('html5')}
-                className="competences-img html5"
-                src="/skills/html5.svg"
-                width={60}
-                height={60}
-                alt="HTML5"
-              />
-              <Image
-                onClick={() => setSelected('css3')}
-                className="competences-img css3"
-                src="/skills/css3.svg"
-                width={60}
-                height={60}
-                alt="Css3"
-              />
-              <Image
-                onClick={() => setSelected('javascript')}
-                className="competences-img javascript"
-                src="/skills/javascript.svg"
-                width={60}
-                height={60}
-                alt="JavaScript"
-              />
-              <Image
-                onClick={() => setSelected('typescript')}
-                className="competences-img typescript"
-                src="/skills/typescript.svg"
-                width={60}
-                height={60}
-                alt="TypeScript"
-              />
-              <Image
-                onClick={() => setSelected('c')}
-                className="competences-img c"
-                src="/skills/c.svg"
-                width={60}
-                height={60}
-                alt="C"
-              />
-              <Image
-                onClick={() => setSelected('react')}
-                className="competences-img react"
-                src="/skills/react.svg"
-                width={60}
-                height={60}
-                alt="React"
-              />
-              <Image
-                onClick={() => setSelected('nextjs')}
-                className="competences-img nextjs"
-                src="/skills/nextjs.svg"
-                width={60}
-                height={60}
-                alt="NextJS"
-              />
-              <Image
-                onClick={() => setSelected('nestjs')}
-                className="competences-img nestjs"
-                src="/skills/nestjs.svg"
-                width={60}
-                height={60}
-                alt="NestJS"
-              />
-              <Image
-                onClick={() => setSelected('sequelize')}
-                className="competences-img sequelize"
-                src="/skills/sequelize.svg"
-                width={60}
-                height={60}
-                alt="Sequelize"
-              />
-              <Image
-                onClick={() => setSelected('prisma')}
-                className="competences-img prisma"
-                src="/skills/prisma.svg"
-                width={60}
-                height={60}
-                alt="Prisma"
-              />
-              <Image
-                onClick={() => setSelected('git')}
-                className="competences-img git"
-                src="/skills/git.svg"
-                width={60}
-                height={60}
-                alt="Git"
-              />
-              <Image
-                onClick={() => setSelected('bash')}
-                className="competences-img bash"
-                src="/skills/bash.svg"
-                width={60}
-                height={60}
-                alt="Bash"
-              />
-            </div>
-            <div className="competences-description-container">
+          <div className={`competences-container ${containerSize}`}>
+            <div className="competences-description-containers competences-description-back">
               <div className={`competences-description ${khula.className}`}>
-              {selected === 'allskills' && <p>Sélectionnez une compétence</p>}
-              {selected === 'html5' && <p>HTML5</p>}
-              {selected === 'css3' && <p>CSS3</p>}
-              {selected === 'javascript' && <p>JavaScript</p>}
-              {selected === 'typescript' && <p>Typescript</p>}
-              {selected === 'c' && <p>C</p>}
-              {selected === 'react' && <p>React</p>}
-              {selected === 'nextjs' && <p>Next.JS</p>}
-              {selected === 'nestjs' && <p>Nest.JS</p>}
-              {selected === 'sequelize' && <p>Sequelize</p>}
-              {selected === 'prisma' && <p>Prisma</p>}
-              {selected === 'git' && <p>Git</p>}
-              {selected === 'bash' && <p>Bash</p>}
+                {selectedBack === 'allskillsback' && <p>Web back-end</p>}
+                {selectedBack === 'javascript' && <p>JavaScript</p>}
+                {selectedBack === 'typescript' && <p>TypeScript</p>}
+                {selectedBack === 'nodejs' && <p>NodeJS</p>}
+                {selectedBack === 'nestjs' && <p>Nest.JS</p>}
+              </div>
             </div>
+            <div className="competences-icons-containers competences-icons-back">
+              {selectedBack === 'allskillsback' && (
+                <div className="icons">
+                  <Image
+                    onClick={() => {
+                      setContainerSize('back')
+                      setTimeout(() => {
+                        setSelectedBack('javascript')
+                      }, 600)
+                    }}
+                    className="competences-img javascript"
+                    src="/skills/javascript.svg"
+                    width={60}
+                    height={60}
+                    alt="JavaScript"
+                  />
+                  <Image
+                    onClick={() => {
+                      setContainerSize('back')
+                      setTimeout(() => {
+                        setSelectedBack('typescript')
+                      }, 600)
+                    }}
+                    className="competences-img typescript"
+                    src="/skills/typescript.svg"
+                    width={60}
+                    height={60}
+                    alt="TypeScript"
+                  />
+                  <Image
+                    onClick={() => {
+                      setContainerSize('back')
+                      setTimeout(() => {
+                        setSelectedBack('nodejs')
+                      }, 600)
+                    }}
+                    className="competences-img nodejs"
+                    src="/skills/nodejs.svg"
+                    width={60}
+                    height={60}
+                    alt="NodeJS"
+                  />
+                  <Image
+                    onClick={() => {
+                      setContainerSize('back')
+                      setTimeout(() => {
+                        setSelectedBack('nestjs')
+                      }, 500)
+                    }}
+                    className="competences-img nestjs"
+                    src="/skills/nestjs.svg"
+                    width={60}
+                    height={60}
+                    alt="NestJS"
+                  />
+                </div>
+              )}
+              {selectedBack !== 'allskillback' && (
+                <SkillCard skill={selectedBack} setContainerSize={setContainerSize} setSelected={setSelectedBack} />
+              )}
+            </div>
+            <div className="competences-description-containers competences-description-bdd">
+              <div className={`competences-description ${khula.className}`}>
+                {selectedBdd === 'allskillsbdd' && <p>Bases de données</p>}
+                {selectedBdd === 'mysql' && <p>MySQL</p>}
+                {selectedBdd === 'sequelize' && <p>Sequelize</p>}
+                {selectedBdd === 'prisma' && <p>Prisma</p>}
+                {selectedBdd === 'mongodb' && <p>MongoDB</p>}
+              </div>
+            </div>
+            <div className="competences-icons-containers competences-icons-bdd">
+              {selectedBdd === 'allskillsbdd' && (
+                <div className="icons">
+                  <Image
+                    onClick={() => {
+                      setContainerSize('bdd')
+                      setTimeout(() => {
+                        setSelectedBdd('mysql')
+                      }, 600)
+                    }}
+                    className="competences-img mysql"
+                    src="/skills/mysql.svg"
+                    width={60}
+                    height={60}
+                    alt="MySQL"
+                  />
+                  <Image
+                    onClick={() => {
+                      setContainerSize('bdd')
+                      setTimeout(() => {
+                        setSelectedBdd('sequelize')
+                      }, 600)
+                    }}
+                    className="competences-img sequelize"
+                    src="/skills/sequelize.svg"
+                    width={60}
+                    height={60}
+                    alt="Sequelize"
+                  />
+                  <Image
+                    onClick={() => {
+                      setContainerSize('bdd')
+                      setTimeout(() => {
+                        setSelectedBdd('prisma')
+                      }, 600)
+                    }}
+                    className="competences-img prisma"
+                    src="/skills/prisma.svg"
+                    width={60}
+                    height={60}
+                    alt="Prisma"
+                  />
+                  <Image
+                    onClick={() => {
+                      setContainerSize('bdd')
+                      setTimeout(() => {
+                        setSelectedBdd('mongodb')
+                      }, 600)
+                    }}
+                    className="competences-img mongodb"
+                    src="/skills/mongodb.svg"
+                    width={60}
+                    height={60}
+                    alt="MongoDB"
+                  />
+                </div>
+              )}
+              {selectedBdd !== 'allskillbdd' && (
+                <SkillCard skill={selectedBdd} setContainerSize={setContainerSize} setSelected={setSelectedBdd} />
+              )}
+            </div>
+            <div className="competences-description-containers competences-description-algo">
+              <div className={`competences-description ${khula.className}`}>
+                {selectedAlgo === 'allskillsalgo' && <p>Algorithmie</p>}
+                {selectedAlgo === 'c' && <p>C</p>}
+                {selectedAlgo === 'python' && <p>Python</p>}
+              </div>
+            </div>
+            <div className="competences-icons-containers competences-icons-algo">
+              {selectedAlgo === 'allskillsalgo' && (
+                <div className="icons">
+                  <Image
+                    onClick={() => {
+                      setContainerSize('algo')
+                      setTimeout(() => {
+                        setSelectedAlgo('c')
+                      }, 600)
+                    }}
+                    className="competences-img c"
+                    src="/skills/c.svg"
+                    width={60}
+                    height={60}
+                    alt="C"
+                  />
+                  <Image
+                    onClick={() => {
+                      setContainerSize('algo')
+                      setTimeout(() => {
+                        setSelectedAlgo('python')
+                      }, 600)
+                    }}
+                    className="competences-img python"
+                    src="/skills/python.png"
+                    width={60}
+                    height={60}
+                    alt="Python"
+                  />
+                </div>
+              )}
+              {selectedAlgo !== 'allskillalgo' && (
+                <SkillCard skill={selectedAlgo} setContainerSize={setContainerSize} setSelected={setSelectedAlgo} />
+              )}
+            </div>
+            <div className="competences-description-containers competences-description-front">
+              <div className={`competences-description ${khula.className}`}>
+                {selectedFront === 'allskillsfront' && <p>Web front-end</p>}
+                {selectedFront === 'html5' && <p>HTML5</p>}
+                {selectedFront === 'css3' && <p>CSS3</p>}
+                {selectedFront === 'react' && <p>React</p>}
+                {selectedFront === 'nextjs' && <p>Next.JS</p>}
+              </div>
+            </div>
+            <div className="competences-icons-containers competences-icons-front">
+              {selectedFront === 'allskillsfront' && (
+                <div className="icons">
+                  <Image
+                    onClick={() => {
+                      setContainerSize('front')
+                      setTimeout(() => {
+                        setSelectedFront('html5')
+                      }, 600)
+                    }}
+                    className="competences-img html5"
+                    src="/skills/html5.svg"
+                    width={60}
+                    height={60}
+                    alt="HTML5"
+                  />
+                  <Image
+                    onClick={() => {
+                      setContainerSize('front')
+                      setTimeout(() => {
+                        setSelectedFront('css3')
+                      }, 600)
+                    }}
+                    className="competences-img css3"
+                    src="/skills/css3.svg"
+                    width={60}
+                    height={60}
+                    alt="Css3"
+                  />
+                  <Image
+                    onClick={() => {
+                      setContainerSize('front')
+                      setTimeout(() => {
+                        setSelectedFront('react')
+                      }, 600)
+                    }}
+                    className="competences-img react"
+                    src="/skills/react.svg"
+                    width={60}
+                    height={60}
+                    alt="React"
+                  />
+                  <Image
+                    onClick={() => {
+                      setContainerSize('front')
+                      setTimeout(() => {
+                        setSelectedFront('nextjs')
+                      }, 600)
+                    }}
+                    className="competences-img nextjs"
+                    src="/skills/nextjs.svg"
+                    width={60}
+                    height={60}
+                    alt="NextJS"
+                  />
+                </div>
+              )}
+              {selectedFront !== 'allskillfront' && (
+                <SkillCard skill={selectedFront} setContainerSize={setContainerSize} setSelected={setSelectedFront} />
+              )}
+            </div>
+            <div className="competences-description-containers competences-description-tools">
+              <div className={`competences-description ${khula.className}`}>
+                {selectedTools === 'allskillstools' && <p>Outils</p>}
+                {selectedTools === 'git' && <p>Git</p>}
+                {selectedTools === 'bash' && <p>Bash</p>}
+              </div>
+            </div>
+            <div className="competences-icons-containers competences-icons-tools">
+              {selectedTools === 'allskillstools' && (
+                <div className="icons">
+                  <Image
+                    onClick={() => {
+                      setContainerSize('tools')
+                      setTimeout(() => {
+                        setSelectedTools('git')
+                      }, 600)
+                    }}
+                    className="competences-img git"
+                    src="/skills/git.svg"
+                    width={60}
+                    height={60}
+                    alt="Git"
+                  />
+                  <Image
+                    onClick={() => {
+                      setContainerSize('tools')
+                      setTimeout(() => {
+                        setSelectedTools('bash')
+                      }, 600)
+                    }}
+                    className="competences-img bash"
+                    src="/skills/bash.svg"
+                    width={60}
+                    height={60}
+                    alt="Bash"
+                  />
+                </div>
+              )}
+              {selectedTools !== 'allskilltools' && (
+                <SkillCard skill={selectedTools} setContainerSize={setContainerSize} setSelected={setSelectedTools} />
+              )}
             </div>
           </div>
-          <div className="background-rect-competences"></div>
         </div>
         <Footer />
       </main>

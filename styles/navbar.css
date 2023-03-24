@@ -32,7 +32,7 @@
 }
 
 .name {
-  grid-area: name;
+  grid-area: name;  
   display: flex;
   text-align: left;
   align-items: center;
@@ -54,16 +54,7 @@
   justify-content: right;
 }
 
-.burger-button-socials {
-  display: none;
-}
-
-.burger-button-socials.open {
-  visibility: hidden;
-}
-
 .nav-socials {
-  visibility: visible;
   animation: socialsAnim 1s ease 0s 1 normal forwards;
 }
 
@@ -91,9 +82,14 @@
 }
 
 .burger-button-menu {
-  position: absolute;
-  top: 11.5vh;
-  align-items: center;
+  position: relative;
+  bottom: 6px;
+}
+
+.burger-button-menu button {
+  font-weight: bold;
+  font-family: inherit;
+  padding: 0px;
 }
 
 .nav-menu.open {
@@ -103,8 +99,7 @@
 }
 
 .nav-elements:hover {
-  border-color: black;
-  border-bottom-style: solid;
+  font-weight: bold
 }
 
 .clipboard {
@@ -132,13 +127,6 @@
   .socials-container nav {
     gap: 2vw;
   }
-  /*.nav-socials {
-    position: static;
-    visibility: hidden;
-  }*/
-  /*.burger-button-socials {
-    display: block;
-  }*/
   .tooltip .tooltiptext {
     width: 40px;
     padding: 0 0;
@@ -149,17 +137,13 @@
     height: auto;
     max-width: 80%;
   }
-  .burger-button-menu {
-    display: block;
-    justify-content: center;
-  }
   .menu {
     align-items: center;
   }
   .menu nav {
     margin: 0px;
     position: absolute;
-    top: 16vh;
+    top: 14vh;
     row-gap: 0.5vh;
   }
   .nav-menu {
@@ -179,11 +163,11 @@
 @media only screen and (min-width: 600px) {
   .header {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
       'name socials'
       'menu menu';
-    margin: 2vh 4vw;
+    margin: 0.5vh 4vw;
     row-gap: 0.8vh;
   }
   .name {
@@ -194,9 +178,6 @@
   }
   .socials-container nav {
     gap: 3vw;
-  }
-  .burger-button-socials {
-    display: none;
   }
   .tooltiptext {
     font-size: 0.9rem;
@@ -250,9 +231,6 @@
   }
   .tooltiptext-cv {
     font-size: x-large;
-  }
-  .burger-button-socials {
-    display: none;
   }
   .tooltiptext {
     position: relative;
