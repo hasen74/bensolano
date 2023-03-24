@@ -1,0 +1,30 @@
+[
+  {
+    "javascript": {
+      "image": "/skills/javascript.svg",
+      "description": "Principal langage appris dans le cadre de mes études.",
+      "projets": [
+        {
+          "titre": "RPG en ligne de commande",
+          "lien": "lien1"
+        }
+      ]
+    }
+  },
+  {
+    "typescript": {
+      "image": "/skills/typescript.svg",
+      "description": "langage typé construit sur JavaScript",
+      "projets": [
+        {
+          "titre": "titre1",
+          "lien": "lien1"
+        },
+        {
+          "titre": "titre2",
+          "lien": "lien2"
+        }
+      ]
+    }
+  }
+]

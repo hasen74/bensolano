@@ -55,11 +55,8 @@
   transition: 700ms ease-in-out;
 }
 
-.competences-container.javascript,
-.competences-container.typescript,
-.competences-container.nodejs,
-.competences-container.nestjs {
-  --row1: 5fr
+.competences-container.open {
+  --row1: 3fr
 }
 
 .competences-icons-containers {
@@ -69,6 +66,30 @@
   border-style: solid;
   border-radius: 10px;
   background-color: lightgrey;
+}
+
+.icons {
+  animation: entrance 1s ease 0s 1 normal forwards;
+}
+
+.competences-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  animation: entrance 1s ease 0s 1 normal forwards;
+}
+
+.competences-text ul {
+    list-style: none;
+    text-decoration: underline ;
+    margin: 0;
+    padding: 0;
+}
+
+.competences-text p {
+    margin: 0;
 }
 
 .competences-icons-back {
@@ -94,11 +115,11 @@
 .competences-img {
   animation: skills-icons-anim 3s linear 0s infinite normal forwards;
   animation-play-state: paused;
-  /* animation: entrance 1s ease 0s 1 normal forwards; */
 }
 
 .competences-img:hover {
   animation-play-state: running;
+  cursor: pointer;
 }
 
 .competences-description-containers {
@@ -219,6 +240,11 @@
   .competences-img {
     height: 45px;
     width: 45px;
+  }
+
+  .img-card {
+    height: 70px;
+    width: 70px;
   }
   /* .background-rect-competences {
     top: 60%;

@@ -5,29 +5,21 @@ import { useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import localFont from '@next/font/local'
+import SkillCard from '../components/SkillCard'
 
 const khula = localFont({ src: './Khula-Regular.ttf', display: 'swap' })
 
 const Competences: NextPage = () => {
+  const [isBackOpen, setIsBackOpen] = useState(false)
+
   const [selectedBack, setSelectedBack] = useState('allskillsback')
   const [selectedBdd, setSelectedBdd] = useState('allskillsbdd')
   const [selectedAlgo, setSelectedAlgo] = useState('allskillsalgo')
   const [selectedFront, setSelectedFront] = useState('allskillsfront')
   const [selectedTools, setSelectedTools] = useState('allskillstools')
 
-  const SkillsBack = () => {
-    switch (selectedBack) {
-      case 'javascript':
-        return <div>js</div>
-      case 'typescript':
-        return <div>ts</div>
-      case 'nodejs':
-        return <div>node</div>
-      case 'nestjs':
-        return <div>nest</div>
-      default:
-        return null
-    }
+  const ToggleBack = () => {
+    setIsBackOpen(!isBackOpen)
   }
 
   return (
@@ -42,12 +34,16 @@ const Competences: NextPage = () => {
       <main className="container">
         <Navbar />
         <div className="main">
-          <div className={`competences-container ${selectedBack}`}>
+          <div className={`competences-container ${isBackOpen ? 'open' : ''}`}>
             <div className="competences-icons-containers competences-icons-back">
               {selectedBack === 'allskillsback' && (
                 <div className="icons">
                   <Image
-                    onClick={() => setSelectedBack('javascript')}
+                    onClick={() => {
+                      setIsBackOpen(!isBackOpen)
+                      setTimeout(() => {
+                        setSelectedBack('javascript');
+                      }, 500);}}
                     className="competences-img javascript"
                     src="/skills/javascript.svg"
                     width={60}
@@ -80,7 +76,11 @@ const Competences: NextPage = () => {
                   />
                 </div>
               )}
-              <div>{SkillsBack()}</div>
+              {selectedBack !== 'allskillback' &&
+                <SkillCard skill={selectedBack}
+                setIsOpen={setIsBackOpen}
+                setSelected={setSelectedBack}/>
+              }
             </div>
             <div className="competences-description-containers competences-description-back">
               <div className={`competences-description ${khula.className}`}>
