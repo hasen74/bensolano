@@ -3,6 +3,7 @@ import '../styles/modal.css'
 import '../styles/navbar.css'
 import '../styles/competences.css'
 import '../styles/projets.css'
+import '../styles/index.css'
 import type { AppProps } from 'next/app'
 
 import localFont from '@next/font/local'
