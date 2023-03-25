@@ -53,23 +53,23 @@
 }
 
 .competences-container.back {
-  --row1: 3fr
+  --row1: 3.5fr
 }
 
 .competences-container.bdd {
-  --row2: 3fr
+  --row2: 3.5fr
 }
 
 .competences-container.algo {
-  --row3: 3fr
+  --row3: 3.5fr
 }
 
 .competences-container.front {
-  --row4: 3fr
+  --row4: 3.5fr
 }
 
 .competences-container.tools {
-  --row5: 3fr
+  --row5: 3.5fr
 }
 
 .competences-icons-containers {
@@ -100,14 +100,25 @@
 
 .competences-text ul {
     list-style: none;
-    text-decoration: underline ;
+    text-decoration: underline;
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
+    padding-left: 0px;
 }
 
 .competences-text p {
     margin: 0;
 }
+
+.competences-text-projets p {
+  text-align: center;
+}
+
+.competences-text-projets li {
+  
+}
+
+
 
 .competences-icons-back {
   grid-area: skills-back;

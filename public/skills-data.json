@@ -38,7 +38,7 @@
   {
     "skill": "nestjs",
     "image": "/skills/nestjs.svg",
-    "description": "NestJS a été ces derniers mois mon premier choix pour le développement d'API.",
+    "description": "NestJS a été ces derniers mois mon premier choix pour le développement d'API REST.",
     "projets": [
       {
         "titre": "API avec RBAC sommaire pour application web évenementielle",
@@ -54,11 +54,11 @@
   {
     "skill": "mongodb",
     "image": "/skills/mongodb.svg",
-    "description": "",
+    "description": "BDD utilisée dans mes derniers projets. C'est aussi la BDD que nous avons choisi pour notre projet annuel de validation de bac+2 (application mobile d'aide à l'organisation familiale).",
     "projets": [
       {
-        "titre": "",
-        "lien": ""
+        "titre": "API sur une BDD cloud (AWS) via MongoDB Atlas pour appli mobile d'émargement scolaire.",
+        "lien": "https://github.com/hasen74/codecampmobile-emargement"
       }
     ],
     "category": "allskillsbdd"
@@ -66,11 +66,11 @@
   {
     "skill": "sequelize",
     "image": "/skills/sequelize.svg",
-    "description": "",
+    "description": "ORM utilisé dans mon premier projet d'API REST.",
     "projets": [
       {
-        "titre": "",
-        "lien": ""
+        "titre": "API sur une BDD MySQL pour un site d'e-commerce, mapping réalisé avec Sequelize.",
+        "lien": "https://github.com/hasen74/animalplayground/tree/main/back"
       }
     ],
     "category": "allskillsbdd"
@@ -78,11 +78,11 @@
   {
     "skill": "prisma",
     "image": "/skills/prisma.svg",
-    "description": "",
+    "description": "ORM utilisé sur un projet pour le mapping des données d'une BDD MySQL et d'une API REST NestJS.",
     "projets": [
       {
-        "titre": "",
-        "lien": ""
+        "titre": "API pour application web événementielle (service de chat et de calendrier entre groupes de travail).",
+        "lien": "https://github.com/hasen74/inclukathon/tree/main/api"
       }
     ],
     "category": "allskillsbdd"
@@ -90,11 +90,11 @@
   {
     "skill": "mysql",
     "image": "/skills/mysql.svg",
-    "description": "",
+    "description": "Première base de données SQL découverte dans le cadre de mes études.",
     "projets": [
       {
-        "titre": "",
-        "lien": ""
+        "titre": "Développement d'une API avec BDD SQL pour un site d'e-commerce.",
+        "lien": "https://github.com/hasen74/animalplayground/tree/main/back"
       }
     ],
     "category": "allskillsbdd"
@@ -102,11 +102,11 @@
   {
     "skill": "c",
     "image": "/skills/c.svg",
-    "description": "",
+    "description": "Mes premiers pas en informatique, dans le cadre du cours en ligne d'Harvard Computer Science 50.",
     "projets": [
       {
-        "titre": "",
-        "lien": ""
+        "titre": "Programme de calcul de votes selon le scrutin Condorcet",
+        "lien": "https://github.com/hasen74/algorithmics/tree/main/c/tideman"
       }
     ],
     "category": "allskillsalgo"
@@ -114,11 +114,11 @@
   {
     "skill": "python",
     "image": "/skills/python.png",
-    "description": "",
+    "description": "Bases d'algorithmie acquises sur codewars.com.",
     "projets": [
       {
-        "titre": "",
-        "lien": ""
+        "titre": "Validateur de grilles de bataille navale",
+        "lien": "https://github.com/hasen74/algorithmics/tree/main/Python/questwars/battleship"
       }
     ],
     "category": "allskillsalgo"
@@ -150,11 +150,11 @@
   {
     "skill": "react",
     "image": "/skills/react.svg",
-    "description": "",
+    "description": "J'ai eu l'occasion de réaliser plusieurs projets front en React, avec Next.js en particulier.",
     "projets": [
       {
-        "titre": "",
-        "lien": ""
+        "titre": "Quizz interactif pour deux joueurs pour l'apprentissage de la conjugaison anglaise.",
+        "lien": "https://github.com/hasen74/englishquizz"
       }
     ],
     "category": "allskillsfront"
@@ -162,10 +162,10 @@
   {
     "skill": "nextjs",
     "image": "/skills/nextjs.svg",
-    "description": "",
+    "description": "Framework React avec rendu côté serveur utilisé sur plusieurs projets.",
     "projets": [
       {
-        "titre": "",
+        "titre": "Ce portfolio a été développé avec Next.js",
         "lien": ""
       }
     ],
@@ -174,7 +174,7 @@
   {
     "skill": "git",
     "image": "/skills/git.svg",
-    "description": "",
+    "description": "Système de contrôle de version utilisé au quotidien via GitHub et GitLab.",
     "projets": [
       {
         "titre": "",
@@ -186,7 +186,7 @@
   {
     "skill": "bash",
     "image": "/skills/bash.svg",
-    "description": "",
+    "description": "Bases, utilisé au quotidien via Windows System for Linux.",
     "projets": [
       {
         "titre": "",

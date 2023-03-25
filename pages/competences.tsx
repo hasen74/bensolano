@@ -80,7 +80,7 @@ const Competences: NextPage = () => {
                       setContainerSize('back')
                       setTimeout(() => {
                         setSelectedBack('javascript')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img javascript"
                     src="/skills/javascript.svg"
@@ -93,7 +93,7 @@ const Competences: NextPage = () => {
                       setContainerSize('back')
                       setTimeout(() => {
                         setSelectedBack('typescript')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img typescript"
                     src="/skills/typescript.svg"
@@ -106,7 +106,7 @@ const Competences: NextPage = () => {
                       setContainerSize('back')
                       setTimeout(() => {
                         setSelectedBack('nodejs')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img nodejs"
                     src="/skills/nodejs.svg"
@@ -153,7 +153,7 @@ const Competences: NextPage = () => {
                       setContainerSize('bdd')
                       setTimeout(() => {
                         setSelectedBdd('mysql')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img mysql"
                     src="/skills/mysql.svg"
@@ -166,7 +166,7 @@ const Competences: NextPage = () => {
                       setContainerSize('bdd')
                       setTimeout(() => {
                         setSelectedBdd('sequelize')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img sequelize"
                     src="/skills/sequelize.svg"
@@ -179,7 +179,7 @@ const Competences: NextPage = () => {
                       setContainerSize('bdd')
                       setTimeout(() => {
                         setSelectedBdd('prisma')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img prisma"
                     src="/skills/prisma.svg"
@@ -192,7 +192,7 @@ const Competences: NextPage = () => {
                       setContainerSize('bdd')
                       setTimeout(() => {
                         setSelectedBdd('mongodb')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img mongodb"
                     src="/skills/mongodb.svg"
@@ -224,7 +224,7 @@ const Competences: NextPage = () => {
                       setContainerSize('algo')
                       setTimeout(() => {
                         setSelectedAlgo('c')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img c"
                     src="/skills/c.svg"
@@ -237,7 +237,7 @@ const Competences: NextPage = () => {
                       setContainerSize('algo')
                       setTimeout(() => {
                         setSelectedAlgo('python')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img python"
                     src="/skills/python.png"
@@ -271,7 +271,7 @@ const Competences: NextPage = () => {
                       setContainerSize('front')
                       setTimeout(() => {
                         setSelectedFront('html5')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img html5"
                     src="/skills/html5.svg"
@@ -284,7 +284,7 @@ const Competences: NextPage = () => {
                       setContainerSize('front')
                       setTimeout(() => {
                         setSelectedFront('css3')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img css3"
                     src="/skills/css3.svg"
@@ -297,7 +297,7 @@ const Competences: NextPage = () => {
                       setContainerSize('front')
                       setTimeout(() => {
                         setSelectedFront('react')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img react"
                     src="/skills/react.svg"
@@ -310,7 +310,7 @@ const Competences: NextPage = () => {
                       setContainerSize('front')
                       setTimeout(() => {
                         setSelectedFront('nextjs')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img nextjs"
                     src="/skills/nextjs.svg"
@@ -342,7 +342,7 @@ const Competences: NextPage = () => {
                       setContainerSize('tools')
                       setTimeout(() => {
                         setSelectedTools('git')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img git"
                     src="/skills/git.svg"
@@ -355,7 +355,7 @@ const Competences: NextPage = () => {
                       setContainerSize('tools')
                       setTimeout(() => {
                         setSelectedTools('bash')
-                      }, 600)
+                      }, 700)
                     }}
                     className="competences-img bash"
                     src="/skills/bash.svg"
