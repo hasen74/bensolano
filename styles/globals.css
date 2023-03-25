@@ -72,12 +72,12 @@ a:active {
 /* Parameters for phones */
 @media only screen and (max-width: 600px) {
   .container {
-    grid-template-rows: 0.7fr 3fr 1fr;
+    grid-template-rows: 0.8fr 3fr 0.5fr;
     padding: 0;
   }
   .main {
     font-size: 1rem;
-    padding: 5px 0;
+    margin: 10px;
   }
   .footer {
     font-size: xx-small;
