@@ -147,7 +147,8 @@
     z-index: 20;
     top: 100%;
     row-gap: 0.5vh;
-    width: 50%
+    width: 50%;
+    padding-bottom: 5px;
   }
   .nav-menu {
     visibility: hidden;
