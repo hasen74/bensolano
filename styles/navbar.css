@@ -115,6 +115,7 @@
       'name'
       'socials'
       'menu';
+    position: relative;
   }
   .name {
     font-size: 1.4rem;
@@ -144,7 +145,7 @@
     margin: 0px;
     position: absolute;
     z-index: 20;
-    top: 18%;
+    top: 100%;
     row-gap: 0.5vh;
     width: 50%
   }
