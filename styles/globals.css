@@ -72,7 +72,7 @@ a:active {
 /* Parameters for phones */
 @media only screen and (max-width: 600px) {
   .container {
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 0.7fr 3fr 1fr;
     padding: 0;
   }
   .main {

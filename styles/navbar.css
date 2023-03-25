@@ -143,8 +143,9 @@
   .menu nav {
     margin: 0px;
     position: absolute;
-    top: 14vh;
+    top: 12%;
     row-gap: 0.5vh;
+    width: 50%
   }
   .nav-menu {
     visibility: hidden;

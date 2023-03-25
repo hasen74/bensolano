@@ -31,13 +31,6 @@
 }
 
 .competences-container {
-  --areas: 
-    'text-back skills-back'
-    'text-bdd skills-bdd'
-    'text-algo skills-algo'
-    'text-front skills-front'
-    'text-tools skills-tools';
-  --columns: repeat(2, 38%);
   --row1 : 1fr;
   --row2 : 1fr;
   --row3 : 1fr;
@@ -49,7 +42,11 @@
   grid-template-columns: repeat(2, 38%);
   grid-template-rows: var(--row1) var(--row2) var(--row3) var(--row4) var(--row5);
   grid-template-areas:
-    var(--areas);
+  'text-back skills-back'
+  'text-bdd skills-bdd'
+  'text-algo skills-algo'
+  'text-front skills-front'
+  'text-tools skills-tools';
   justify-content: center;
 
   transition: 700ms ease-in-out;
@@ -88,6 +85,10 @@
   animation: entrance 1s ease 0s 1 normal forwards;
 }
 
+.description-phone {
+  display: none
+}
+
 .competences-text {
   display: flex;
   flex-direction: column;
@@ -106,10 +107,6 @@
 
 .competences-text p {
     margin: 0;
-}
-
-.inline {
-  display: inline-block
 }
 
 .competences-icons-back {
@@ -209,9 +206,41 @@
 /* Parameters for phones */
 @media only screen and (max-width: 600px) {
   .competences-container {
+    grid-template-columns : 76%;
+    grid-template-areas:
+    'skills-back'
+    'skills-bdd'
+    'skills-algo'
+    'skills-front'
+    'skills-tools';
+    padding-top: 1vh;
     row-gap: 5px;
-    column-gap: 5px;
-    height: 80%
+    height: 95%
+  }
+
+  .competences-description-containers {
+    display: none
+  }
+
+  .competences-icons-containers {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .icons-containers-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 6px;
+  }
+
+  .icons-containers-phone p {
+    margin: 2px;
+  }
+
+  .description-phone {
+    display: block
   }
 
   .icons {
@@ -229,14 +258,12 @@
     width: 40px;
   }
 
-  .competences-icons-containers {
-    width: 100%;
-    padding: 10px;
+  .competences-text {
+    text-align: center
   }
 
-  .competences-description-containers p {
-    font-weight: bold;
-    font-size: medium;
+  .competences-text p, a{
+    font-size: small;
   }
 
 }
@@ -244,6 +271,7 @@
 /* Parameters for medium devices */
 @media only screen and (min-width: 600px) {
   .competences-container {
+    padding-top: 10px;
     row-gap: 15px;
     column-gap: 15px;
   }
@@ -277,6 +305,7 @@
 /* Parameters for big laptops */
 @media only screen and (min-width: 992px) {
   .competences-container {
+    padding-top: 15px;
     row-gap: 20px;
     column-gap: 20px;
   }

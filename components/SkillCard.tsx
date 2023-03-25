@@ -1,26 +1,36 @@
 import Image from 'next/image'
-import data from '../skills-data.json'
+import data from '../public/skills-data.json'
 
-interface Skill {
-  [key: string]: {
-    image: string
-    description: string
-    projets: {
-      titre: string
-      lien: string
-    }[],
-    category: string
-  }
+interface ProjectData {
+  titre: string;
+  lien: string;
 }
 
-export default function SkillCard(props: any) {
-  const skill: Skill | undefined = data.find((item) => item.hasOwnProperty(props.skill))?.[props.skill]
+interface SkillData {
+  skill: string
+  image: string;
+  description: string;
+  projets: ProjectData[];
+  category: string;
+}
 
-  if (!skill) {
+interface SkillCardProps {
+  skill: string;
+  setContainerSize: (size: string) => void;
+  setSelected: (selected: string) => void;
+}
+
+export default function SkillCard(props: SkillCardProps) {
+  const skillsData: SkillData[] = data
+  const skillData: SkillData | undefined = skillsData.find(
+    (item) => item.skill === props.skill
+  );
+
+   if (!skillData) {
     return null
-  }
+   }
 
-  const { category, image, description, projets } = skill
+  const { category, image, description, projets } = skillData
 
   return (
     <div className="competences-text">

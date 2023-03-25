@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import localFont from '@next/font/local'
@@ -17,6 +17,36 @@ const Competences: NextPage = () => {
   const [selectedAlgo, setSelectedAlgo] = useState('allskillsalgo')
   const [selectedFront, setSelectedFront] = useState('allskillsfront')
   const [selectedTools, setSelectedTools] = useState('allskillstools')
+
+  useEffect(() => {
+    switch (containerSize) {
+      case 'back':
+        setSelectedBdd('allskillsbdd')
+        setSelectedAlgo('allskillsalgo')
+        setSelectedFront('allskillsfront')
+        setSelectedTools('allskillstools')
+      case 'bdd':
+        setSelectedBack('allskillsback')
+        setSelectedAlgo('allskillsalgo')
+        setSelectedFront('allskillsfront')
+        setSelectedTools('allskillstools')
+      case 'algo':
+        setSelectedBack('allskillsback')
+        setSelectedBdd('allskillsbdd')
+        setSelectedFront('allskillsfront')
+        setSelectedTools('allskillstools')
+      case 'front':
+        setSelectedBack('allskillsback')
+        setSelectedBdd('allskillsbdd')
+        setSelectedAlgo('allskillsalgo')
+        setSelectedTools('allskillstools')
+      case 'tools':
+        setSelectedBack('allskillsback')
+        setSelectedBdd('allskillsbdd')
+        setSelectedAlgo('allskillsalgo')
+        setSelectedFront('allskillsfront')
+    }
+  }, [containerSize])
 
   return (
     <>
@@ -42,6 +72,8 @@ const Competences: NextPage = () => {
             </div>
             <div className="competences-icons-containers competences-icons-back">
               {selectedBack === 'allskillsback' && (
+                <div className="icons-containers-phone">
+                <div className="description-phone"><p>Web back-end</p></div>
                 <div className="icons">
                   <Image
                     onClick={() => {
@@ -96,6 +128,7 @@ const Competences: NextPage = () => {
                     alt="NestJS"
                   />
                 </div>
+                </div>
               )}
               {selectedBack !== 'allskillback' && (
                 <SkillCard skill={selectedBack} setContainerSize={setContainerSize} setSelected={setSelectedBack} />
@@ -112,6 +145,8 @@ const Competences: NextPage = () => {
             </div>
             <div className="competences-icons-containers competences-icons-bdd">
               {selectedBdd === 'allskillsbdd' && (
+                <div className="icons-containers-phone">
+                <div className="description-phone"><p>Bases de données</p></div>
                 <div className="icons">
                   <Image
                     onClick={() => {
@@ -166,6 +201,7 @@ const Competences: NextPage = () => {
                     alt="MongoDB"
                   />
                 </div>
+                </div>
               )}
               {selectedBdd !== 'allskillbdd' && (
                 <SkillCard skill={selectedBdd} setContainerSize={setContainerSize} setSelected={setSelectedBdd} />
@@ -179,7 +215,9 @@ const Competences: NextPage = () => {
               </div>
             </div>
             <div className="competences-icons-containers competences-icons-algo">
-              {selectedAlgo === 'allskillsalgo' && (
+              {selectedAlgo === 'allskillsalgo' && (<div className="icons-containers-phone">
+                <div className="description-phone">
+                  <p>Algorithmie</p></div>
                 <div className="icons">
                   <Image
                     onClick={() => {
@@ -208,6 +246,7 @@ const Competences: NextPage = () => {
                     alt="Python"
                   />
                 </div>
+                </div>
               )}
               {selectedAlgo !== 'allskillalgo' && (
                 <SkillCard skill={selectedAlgo} setContainerSize={setContainerSize} setSelected={setSelectedAlgo} />
@@ -224,6 +263,8 @@ const Competences: NextPage = () => {
             </div>
             <div className="competences-icons-containers competences-icons-front">
               {selectedFront === 'allskillsfront' && (
+                <div className="icons-containers-phone">
+                <div className="description-phone"><p>Web Front-end</p></div>
                 <div className="icons">
                   <Image
                     onClick={() => {
@@ -278,6 +319,7 @@ const Competences: NextPage = () => {
                     alt="NextJS"
                   />
                 </div>
+                </div>
               )}
               {selectedFront !== 'allskillfront' && (
                 <SkillCard skill={selectedFront} setContainerSize={setContainerSize} setSelected={setSelectedFront} />
@@ -292,6 +334,8 @@ const Competences: NextPage = () => {
             </div>
             <div className="competences-icons-containers competences-icons-tools">
               {selectedTools === 'allskillstools' && (
+                <div className="icons-containers-phone">
+                <div className="description-phone"><p>Outils</p></div>
                 <div className="icons">
                   <Image
                     onClick={() => {
@@ -319,6 +363,7 @@ const Competences: NextPage = () => {
                     height={60}
                     alt="Bash"
                   />
+                </div>
                 </div>
               )}
               {selectedTools !== 'allskilltools' && (
