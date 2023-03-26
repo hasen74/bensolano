@@ -5,7 +5,7 @@
 html,
 body {
   margin: 0;
-  background-color: #f5f7fc;
+  background-color: #F0F5F9;
   height: auto;
   overflow-x: hidden;
 }
@@ -19,7 +19,7 @@ button {
 a:link,
 a:visited,
 a:active {
-  color: black;
+  color: #1E2022;
   text-decoration: none;
 }
 
@@ -58,7 +58,8 @@ a:active {
   position: relative;
   isolation: isolate;
   z-index: 1;
-  animation: entrance 1s ease 0s 1 normal forwards;
+  /* background-color: #C9D6DF; */
+  /* animation: entrance 1s ease 0s 1 normal forwards; */
 }
 
 .footer {
@@ -72,7 +73,7 @@ a:active {
 /* Parameters for phones */
 @media only screen and (max-width: 600px) {
   .container {
-    grid-template-rows: 0.8fr 3fr 0.5fr;
+    grid-template-rows: 110px 3fr 0.3fr;
     padding: 0;
   }
   .main {
@@ -96,7 +97,7 @@ a:active {
 /* Parameters for big laptops */
 @media only screen and (min-width: 992px) {
   .container {
-    grid-template-rows: 150px 6fr 1fr;
+    grid-template-rows: 120px 6fr 1fr;
   }
 
   .footer {

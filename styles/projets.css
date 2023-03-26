@@ -17,13 +17,13 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
-  box-shadow: 0 6px 20px black;
+  box-shadow: 0 6px 20px #1E2022;
   text-align: justify;
-  background: #f5f7fc;
+  background: #F0F5F9;
 }
 
 .project p {
-  color: black;
+  color: #1E2022;
 }
 
 .title {

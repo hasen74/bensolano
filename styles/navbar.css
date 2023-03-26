@@ -28,16 +28,17 @@
   grid-area: header;
   z-index: 10;
   display: grid;
-  background-color: #f5f7fc;
+  background-color: #F0F5F9;
 }
 
 .name {
   grid-area: name;  
+  color: #1E2022;
   display: flex;
   text-align: left;
   align-items: center;
   font-weight: bold;
-  background-color: #f5f7fc;
+  background-color: #F0F5F9;
 }
 
 .socials-container {
@@ -61,7 +62,7 @@
 /* Tooltip text */
 .tooltiptext {
   margin: 0;
-  color: black;
+  color: 1E2022;
   text-align: center;
   display: none;
 }
@@ -74,7 +75,7 @@
   grid-area: menu;
   display: flex;
   justify-content: center;
-  background-color: #f5f7fc;
+  background-color: #F0F5F9;
 }
 
 .menu nav {
@@ -95,11 +96,11 @@
 .nav-menu.open {
   visibility: visible;
   animation: menuSlideDown 1s ease 0s 1 normal forwards;
-  background-color: #f5f7fc;
+  background-color: #F0F5F9;
 }
 
 .nav-elements:hover {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #1E2022;
   font-weight: normal;
 }
 
@@ -174,6 +175,8 @@
       'menu menu';
     margin: 0.5vh 4vw;
     row-gap: 0.8vh;
+    position: relative;
+    z-index: 1;
   }
   .name {
     font-size: 1.7rem;
@@ -213,7 +216,7 @@
 /* Parameters for big laptops */
 @media only screen and (min-width: 992px) {
   .header {
-    margin: 20px 0;
+    margin: 10px 0;
   }
   .name {
     margin-left: 30px;
