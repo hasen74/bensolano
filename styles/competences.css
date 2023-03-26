@@ -264,7 +264,11 @@
   }
 
   .description-phone {
-    display: block
+    display: block;
+  }
+
+  .description-phone p {
+    font-size: large;
   }
 
   .icons {
