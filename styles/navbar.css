@@ -175,9 +175,8 @@
       'menu menu';
     margin: 0.5vh 4vw;
     row-gap: 0.8vh;
-    position: relative;
-    z-index: 1;
   }
+  
   .name {
     font-size: 1.7rem;
   }

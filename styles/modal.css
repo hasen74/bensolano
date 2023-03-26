@@ -1,6 +1,7 @@
 .modal {
   position: fixed; /* position the modal in the center of the screen */
   isolation: isolate;
+  z-index: 30;
   top: 0;
   left: 0;
   right: 0;
@@ -12,6 +13,8 @@
 }
 .modal-content {
   display: flex;
+  position: relative;
+  z-index: 30;
   flex-direction: column;
   text-align: left;
   justify-content: center;
@@ -30,6 +33,7 @@
 
 #email {
   margin-top: 3px;
+  margin-bottom: 6px;
 }
 
 #phone {
@@ -48,8 +52,7 @@
 /* Parameters for phones */
 @media only screen and (max-width: 600px) {
   .modal-content {
-    padding-right: 1.5vh;
-    padding-left: 1.5vh;
+    padding: 1.5vh;
   }
 }
 /* Parameters for medium devices */
