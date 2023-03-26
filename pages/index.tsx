@@ -48,8 +48,8 @@ const Home: NextPage = () => {
                 <p>Amoureux du langage, curieux du monde qui m'entoure et passionné par l'informatique depuis mon adolescence, j'ai décidé de démarrer une carrière dans l'IT après des études de langues et dix ans en tant que professeur de danse.</p>
               </div>
               <div className="zone2 zone">
-                <p>En attendant le coup de foudre pour les technos qui me donneront envie de m'y consacrer à 100%, je prend plaisir à explorer différents langages et développer ma culture informatique.</p>
-                <p>Toujours <b>très engagé dans mes projets</b>, à l'aise en autonomie comme en équipe, <b>j'aime vraiment apprendre</b> et n'ai pas peur de poser des questions ou d'admettre que je n'ai pas la réponse.</p>
+                <p>En attendant le coup de foudre pour les technos qui me donneront envie de m'y consacrer à 100%, je prends plaisir à explorer différents langages et développer ma culture informatique.</p>
+                <p>Toujours <b>très engagé dans mes projets</b>, à l'aise en autonomie comme en équipe, <b>j'aime les défis</b> et n'ai pas peur de demander de l'aide ou d'admettre que je n'ai pas la réponse.</p>
                 <p>Je parle couramment <b>anglais</b>, <b>espagnol</b>, et peux échanger simplement en <b>italien</b>.</p>
                 <p>A votre dispostion pour discuter d'une éventuelle belle collaboration !</p>
               </div>

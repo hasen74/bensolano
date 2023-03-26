@@ -140,6 +140,7 @@ p {
 @media only screen and (max-width: 600px) {
   .presentation {
     grid-template-rows: 0.3fr 0.5fr 2fr;
+    margin-top: 15px;
   }
 
  .bandeau {
@@ -166,6 +167,8 @@ p {
 .text-pres {
   grid-template-columns: 1fr;
   margin: 3% 10%;
+  background-color: lightgray;
+  padding: 15px;
 }
 
  p {
