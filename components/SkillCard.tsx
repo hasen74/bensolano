@@ -8,6 +8,7 @@ interface ProjectData {
 
 interface SkillData {
   skill: string
+  name: string
   image: string
   description: string
   projets: ProjectData[]
@@ -28,10 +29,11 @@ export default function SkillCard(props: SkillCardProps) {
     return null
   }
 
-  const { category, image, description, projets } = skillData
+  const { name, category, image, description, projets } = skillData
 
   return (
     <div className="competences-text">
+      <p className="skill-name">{name}</p>
       <Image
         className="img-card"
         src={image}

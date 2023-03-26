@@ -1,6 +1,7 @@
 [
   {
     "skill": "javascript",
+    "name": "JavaScript",
     "image": "/skills/javascript.svg",
     "description": "Principal langage appris dans le cadre de mes études.",
     "projets": [
@@ -13,6 +14,7 @@
   },
   {
     "skill": "typescript",
+    "name": "TypeScript",
     "image": "/skills/typescript.svg",
     "description": "Tous mes derniers projets ont fait usage de TypeScript : développement d'API, projets front...",
     "projets": [
@@ -25,6 +27,7 @@
   },
   {
     "skill": "nodejs",
+    "name": "NodeJS",
     "image": "/skills/nodejs.svg",
     "description": "NodeJS constitue mon environnement de travail principal.",
     "projets": [
@@ -37,6 +40,7 @@
   },
   {
     "skill": "nestjs",
+    "name": "Nest.JS",
     "image": "/skills/nestjs.svg",
     "description": "NestJS a été ces derniers mois mon premier choix pour le développement d'API REST.",
     "projets": [
@@ -53,6 +57,7 @@
   },
   {
     "skill": "mongodb",
+    "name": "MongoDB",
     "image": "/skills/mongodb.svg",
     "description": "BDD utilisée dans mes derniers projets. C'est aussi la BDD que nous avons choisi pour notre projet annuel de validation de bac+2 (application mobile d'aide à l'organisation familiale).",
     "projets": [
@@ -65,6 +70,7 @@
   },
   {
     "skill": "sequelize",
+    "name": "Sequelize",
     "image": "/skills/sequelize.svg",
     "description": "ORM utilisé dans mon premier projet d'API REST.",
     "projets": [
@@ -77,6 +83,7 @@
   },
   {
     "skill": "prisma",
+    "name": "Prisma",
     "image": "/skills/prisma.svg",
     "description": "ORM utilisé sur un projet pour le mapping des données d'une BDD MySQL et d'une API REST NestJS.",
     "projets": [
@@ -89,6 +96,7 @@
   },
   {
     "skill": "mysql",
+    "name": "MySQL",
     "image": "/skills/mysql.svg",
     "description": "Première base de données SQL découverte dans le cadre de mes études.",
     "projets": [
@@ -101,6 +109,7 @@
   },
   {
     "skill": "c",
+    "name": "C",
     "image": "/skills/c.svg",
     "description": "Mes premiers pas en informatique, dans le cadre du cours en ligne d'Harvard Computer Science 50.",
     "projets": [
@@ -113,6 +122,7 @@
   },
   {
     "skill": "python",
+    "name": "Python",
     "image": "/skills/python.png",
     "description": "Bases d'algorithmie acquises sur codewars.com.",
     "projets": [
@@ -125,6 +135,7 @@
   },
   {
     "skill": "html5",
+    "name": "HTML5",
     "image": "/skills/html5.svg",
     "description": "",
     "projets": [
@@ -137,6 +148,7 @@
   },
   {
     "skill": "css3",
+    "name": "CSS3",
     "image": "/skills/css3.svg",
     "description": "",
     "projets": [
@@ -149,6 +161,7 @@
   },
   {
     "skill": "react",
+    "name": "React",
     "image": "/skills/react.svg",
     "description": "J'ai eu l'occasion de réaliser plusieurs projets front en React, avec Next.js en particulier.",
     "projets": [
@@ -161,6 +174,7 @@
   },
   {
     "skill": "nextjs",
+    "name": "Nest.JS",
     "image": "/skills/nextjs.svg",
     "description": "Framework React avec rendu côté serveur utilisé sur plusieurs projets.",
     "projets": [
@@ -173,6 +187,7 @@
   },
   {
     "skill": "git",
+    "name": "Git",
     "image": "/skills/git.svg",
     "description": "Système de contrôle de version utilisé au quotidien via GitHub et GitLab.",
     "projets": [
@@ -185,6 +200,7 @@
   },
   {
     "skill": "bash",
+    "name": "Bash",
     "image": "/skills/bash.svg",
     "description": "Bases, utilisé au quotidien via Windows System for Linux.",
     "projets": [

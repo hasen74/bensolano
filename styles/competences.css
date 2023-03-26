@@ -81,6 +81,10 @@
   background-color: #C9D6DF;
 }
 
+.skill-name {
+  display: none;
+}
+
 .icons {
   animation: entrance 1s ease 0s 1 normal forwards;
 }
@@ -241,6 +245,13 @@
     padding: 0px 10px;
   }
 
+  .skill-name {
+    display: block;
+    position: relative;
+    bottom: 2px;
+    font-size: large;
+  }
+
   .icons-containers-phone {
     display: flex;
     flex-direction: column;
@@ -275,7 +286,7 @@
     text-align: center
   }
 
-  .competences-text p, a{
+  .competences-text-projets p, a {
     font-size: small;
   }
 

@@ -42,7 +42,7 @@ const Home: NextPage = () => {
               <div className="zone1 zone">
                 <p>
                   <b>Développeur full stack</b> en année préparatoire à l'ETNA depuis
-                  septembre 2022, je suis <b>particulièrement attiré par le développement back</b> et suis impatient de découvrir
+                  septembre 2022, je suis <b>particulièrement attiré par le développement back</b> et impatient de découvrir
                   l'administration système réseaux et la sécurité.
                 </p>
                 <p>Amoureux du langage, curieux du monde qui m'entoure et passionné par l'informatique depuis mon adolescence, j'ai décidé de démarrer une carrière dans l'IT après des études de langues et dix ans en tant que professeur de danse.</p>
