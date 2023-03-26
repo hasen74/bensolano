@@ -140,6 +140,9 @@
     height: auto;
     max-width: 80%;
   }
+  .text-menu {
+    font-size: medium
+  }
   .menu {
     align-items: center;
   }
@@ -176,7 +179,7 @@
     margin: 0.5vh 4vw;
     row-gap: 0.8vh;
   }
-  
+
   .name {
     font-size: 1.7rem;
   }
