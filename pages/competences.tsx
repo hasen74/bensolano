@@ -60,6 +60,7 @@ const Competences: NextPage = () => {
       <main className="container">
         <Navbar />
         <div className="main">
+          <div className="cliquez">Pour plus de détails sur une compétence et voir les projets associés, cliquez dessus.</div>
           <div className={`competences-container ${containerSize}`}>
             <div className="competences-description-containers competences-description-back">
               <div className={`competences-description ${khula.className}`}>
