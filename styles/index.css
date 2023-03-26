@@ -12,6 +12,20 @@
 	}
 }
 
+@keyframes slideDown {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+}
+
 p {
   margin: 0px;
 }
@@ -21,73 +35,79 @@ p {
   height: 100%;
   width: 100%;
   position: relative;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 0.3fr 3fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr 2fr;
   grid-template-areas:
   'bandeau bandeau'
-  'photo-pres text-pres';
+  'photo-pres photo-pres'
+  'text-pres text-pres';
 }
 
 .bandeau {
   grid-area: bandeau;
+  display: flex;
   text-align: center;
-  /* font-weight: bold; */
+  justify-content: center;
   background-color: lightgrey;
 }
 
 .bandeau p {
-  display: inline-block;
-  align-items: center;
+  align-self: center;
 }
 
 /* .opentowork {
   animation: blink 3s ease 0s infinite normal forwards;
 } */
 
-.photo-pres {
+.photo-container {
   grid-area: photo-pres;
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 2%;
 }
 
 .photo-element {
   height: 150px;
   width: auto;
-  position: absolute;
-  top: 125px;
-  left: 100px;
-  /* border-style: solid;
-  border-color: black; */
-  padding: 10px;
-  z-index: 2;
+  border-radius: 10px;
+  animation: entrance 2.5s ease 0s 1 normal forwards;
+
 }
 
 .background-rect {
+  grid-area: text-pres;
   position: absolute;
-  top: 100px;
-  left: 75px;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-color: lightgrey
+  bottom: 5%;
+  align-self: center;
+  justify-self: center;
+  height: 120%;
+  width: 70vw;
+  z-index: 1;
+  background-color: #DDDDDD;
+  border-right-style: solid;
+  border-left-style: solid;
+  animation: slideDown 2s ease 0s 1 normal forwards;
 }
 
 .text-pres {
   grid-area: text-pres;
-  padding: 10%;
-  background-color: lightgrey;
-  margin: 5%
-}
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 1% 20%;
+  column-gap: 5%;
+  animation: entrance 3s ease 0s 1 normal forwards;
 
-.text-pres div {
-  background-color: light;
-  border-radius: 2px;
 }
 
 .text-pres p {
   padding: 1%;
 }
+
 
 /* Parameters for phones */
 @media only screen and (max-width: 600px) {

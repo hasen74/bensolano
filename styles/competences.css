@@ -310,7 +310,7 @@
 /* Parameters for big laptops */
 @media only screen and (min-width: 992px) {
   .competences-container {
-    padding-top: 40px;
+    padding-top: 10px;
     row-gap: 20px;
     column-gap: 20px;
   }

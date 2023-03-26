@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Portfolio de Benjamin Solano</title>
+        <title>Benjamin Solano | Porfolio Apprenti Développeur Full Stack</title>
         <meta name="description" content="Développeur fullstack" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -23,26 +23,27 @@ const Home: NextPage = () => {
         <div className="main">
           <div className="presentation">
             <div className="bandeau">
-              <p className="opentowork">OPEN TO WORK.&nbsp;</p>
-              <p>Disponible pour une alternance de 8 mois jusqu'en janvier 2024.&nbsp;</p>
-              <p>Alternance renouvelable un an sur l'année du bachelor.</p>
+              <p>OPEN TO WORK. 
+              Disponible pour une alternance de 8 mois jusqu'en janvier 2024. 
+              Alternance renouvelable un an sur l'année du bachelor.</p>
             </div>
-            <div className="photo-pres">
-              <Image className="photo-element" src="/photo_test.png" width={130} height={130} alt="photo"></Image>
-              <div className="background-rect"></div>
+            <div className="photo-container">
+                <Image className="photo-element" src="/photo_test.png" width={130} height={130} alt="photo"></Image>
             </div>
+            <div className="background-rect"></div>
             <div className="text-pres">
-              <div className="text-general">
+              <div className="text-general square">
                 <p>
-                  Développeur fullstack en début de cursus à l'ETNA, je suis particulièrement attiré par le
-                  développement back et impatient de découvrir l'administration systèmes et la sécurité.
+                  Développeur full stack en année préparatoire à l'ETNA depuis septembre 2022, je suis particulièrement attiré
+                   par le développement back et impatient de découvrir l'administration système réseaux et la sécurité.
+
+                  </p>
+                <p>
+                  Ancien danseur, passionné des différentes formes de communication, j'ai 
                 </p>
               </div>
-              <div className="text-langues">
+              <div className="text-langues square">
                 <p>Je parle couramment anglais, espagnol, et peux échanger simplement en italien.</p>
-              </div>
-              <div className="text-qualites">
-                <p>Ancien professeur de danse, je possède un excellent relationnel, un goût prononcé pour l'apprentissage et une grande curiosité.</p>
               </div>
             </div>
           </div>
