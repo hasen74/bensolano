@@ -39,9 +39,6 @@ export default function Navbar() {
             <a href="/CV_Benjamin_Solano_Alternance_Developpeur.pdf" target="_blank" rel="noreferrer">
               <Image className="socials-img socials-img-cv" src="/cv.png" width={30} height={30} alt="cv" />
             </a>
-            <a href="/CV_Benjamin_Solano_Alternance_Developpeur.pdf" target="_blank" rel="noreferrer">
-              <p className="tooltiptext tooltiptext-cv">Téléchargez mon CV</p>
-            </a>
           </div>
           <div className="socials socials-contact">
             <ModalMail
