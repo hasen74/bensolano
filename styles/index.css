@@ -122,16 +122,13 @@ p {
   grid-area: text-pres;
   display: grid;
   animation: entrance 3s ease 0s 1 normal forwards;
-
+  /* background-color: #C9D6DF; */
 }
 
 .text-pres p {
   padding: 1%;
   text-align: justify;
   color: #1E2022
-}
-
-.zone1 {
 }
 
 
@@ -165,8 +162,8 @@ p {
 
 .text-pres {
   grid-template-columns: 1fr;
-  margin: 3% 10%;
-  background-color: #C9D6DF;
+  margin: 0% 10%;
+  /* background-color: #C9D6DF; */
   padding: 15px;
 }
 
@@ -199,7 +196,7 @@ p {
   .text-pres {
     grid-template-areas: 'zone1 zone2';
     grid-template-columns: 1fr 1fr;
-    margin: 1% 8%;
+    margin: 0% 8%;
     column-gap: 3%;
   }
 
@@ -208,7 +205,7 @@ p {
     /* border-style: solid;
     border-width:  thin; */
     padding: 10px;
-    background-color: #C9D6DF
+    /* background-color: #C9D6DF */
   }
 
   p {
@@ -240,7 +237,7 @@ p {
   .text-pres {
     grid-template-areas: 'zone1 zone2';
     grid-template-columns: 1fr 1fr;
-    margin: 1% 12%;
+    margin: 0% 12%;
     column-gap: 5%;
   }
 

@@ -8,6 +8,8 @@ import Link from 'next/link'
 import localFont from '@next/font/local'
 
 const hindVadodara = localFont({ src: './HindVadodara-Regular.ttf', display: 'swap' })
+const hind = localFont({ src: './HindVadodara-Regular.ttf', display: 'swap' })
+
 
 // Projects page
 // Map method used to display as many cards as there are objects in the json file */
@@ -29,9 +31,9 @@ const Projets: NextPage = () => {
               return (
                 <div className={`project`} key="{projet}">
                   <p className="title">{projet.Titre}</p>
-                  <p>{projet.Description}</p>
+                  <p className={`${hind.className}`}>{projet.Description}</p>
                   <p className="technologies">Technologies</p>
-                  <p>{projet.Technologies}</p>
+                  <p className={`${hind.className}`}>{projet.Technologies}</p>
                   <div className="project-img-container">
                   {projet.Image !== '' && (<Link href={projet.Image} target="_blank">
                       

@@ -87,7 +87,7 @@ a:active {
 /* Parameters for medium devices */
 @media only screen and (min-width: 600px) {
   .container {
-    grid-template-rows: 120px 5fr 1fr;
+    grid-template-rows: 120px 5fr 50px;
   }
   .footer {
     font-size: 0.7rem;
@@ -97,7 +97,7 @@ a:active {
 /* Parameters for big laptops */
 @media only screen and (min-width: 992px) {
   .container {
-    grid-template-rows: 120px 6fr 1fr;
+    grid-template-rows: 120px 6fr 50px;
   }
 
   .footer {

@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           <div className="presentation">
             <div className="bandeau">
               <p>
-                OPEN TO WORK. Je recherche une alternance de 8 mois jusqu'en janvier 2024. Alternance renouvelable un
+                OPEN TO WORK. Je recherche une alternance jusqu'en janvier 2024. Alternance renouvelable un
                 an sur l'année du bachelor.
               </p>
             </div>
@@ -51,7 +51,6 @@ const Home: NextPage = () => {
                 <p>En attendant le coup de foudre pour les technos qui me donneront envie de m'y consacrer à 100%, je prends plaisir à explorer différents langages et développer ma culture informatique.</p>
                 <p>Toujours <b>très engagé dans mes projets</b>, à l'aise en autonomie comme en équipe, <b>j'aime les défis</b> et n'ai pas peur de demander de l'aide ou d'admettre que je n'ai pas la réponse.</p>
                 <p>Je parle couramment <b>anglais</b>, <b>espagnol</b>, et peux échanger simplement en <b>italien</b>.</p>
-                <p>A votre dispostion pour discuter d'une éventuelle belle collaboration !</p>
               </div>
             </div>
           </div>
