@@ -1,0 +1,37 @@
+[
+  {
+    "Titre": "Application mobile scolaire d'émargement",
+    "Description": "Dans le cadre d'un codecamp mobile cross-platform. API REST et application mobile.",
+    "Technologies": "Pour le back, base de données MongoDB hébergée sur AWS via Mongo Atlas, consommée par une API Nest.js (TypeScript). Application mobile développée avec Flutter (Dart).",
+    "Lien": "https://github.com/hasen74/englishquizz",
+    "Image": ""
+  },
+  {
+    "Titre": "The Verb Quizz Extravangaza",
+    "Description": "Application web de quizz un contre un pour l'apprentissage de la grammaire anglaise. Récupération de fichiers sonores d'une API de text-to-speech open source, timer, différentes manches et challenges.",
+    "Technologies": "React (Next.js)",
+    "Lien": "https://github.com/hasen74/englishquizz",
+    "Image": ""
+  },
+  {
+    "Titre": "Inclusion Conseil : portail Inclukathon",
+    "Description": "Application web incluant un service de chat et un calendrier pour les participants à un événement, développée suite au défi lancée par l'entreprise Inclusion Conseil.",
+    "Technologies": "Application front développée avec Next.js (React, TypeScript), Socket.IO pour le service de chat, API développée avec Nest.js (TypeScript), JWT, RBAC avec la librairie Castle, et modélisation de la base de données MySQL avec Prisma.",
+    "Lien": "https://github.com/hasen74/inclukathon",
+    "Image": "/projects/chat.png"
+  },
+  {
+    "Titre": "Application d'e-commerce",
+    "Description": "Programmation d'une API consommée en front par un site d'e-commerce. Le site inclut une page admin pour la réalisation de toutes les opérations du CRUD.",
+    "Technologies": "Application front développée en React (framework Next.js), API réalisée en TypeScript, le framework Express et Sequelize pour la modélisation de la base de données.",
+    "Lien": "https://github.com/hasen74/animalplayground",
+    "Image": "/projects/AP-admin.png"
+  },
+  {
+    "Titre": "The Hyrule Castle",
+    "Description": "Programmation d'un RPG en ligne de commande sur le thème du jeu Zelda.",
+    "Technologies": "JavaScript, TypeScript.",
+    "Lien": "https://github.com/hasen74/thehyrulecastle",
+    "Image": "/projects/hyrule_fight.png"
+  }
+]
