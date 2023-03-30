@@ -87,7 +87,7 @@ a:active {
 /* Parameters for medium devices */
 @media only screen and (min-width: 600px) {
   .container {
-    grid-template-rows: 120px 5fr 50px;
+    grid-template-rows: 100px 5fr 50px;
   }
   .footer {
     font-size: 0.7rem;

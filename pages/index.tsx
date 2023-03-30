@@ -50,7 +50,7 @@ const Home: NextPage = () => {
               <div className="zone2 zone">
                 <p>En attendant le coup de foudre pour les technos qui me donneront envie de m'y consacrer à 100%, je prends plaisir à explorer différents langages et développer ma culture informatique.</p>
                 <p>Toujours <b>très engagé dans mes projets</b>, à l'aise en autonomie comme en équipe, <b>j'aime les défis</b> et n'ai pas peur de demander de l'aide ou d'admettre que je n'ai pas la réponse.</p>
-                <p>Je parle couramment <b>anglais</b>, <b>espagnol</b>, et peux échanger simplement en <b>italien</b>.</p>
+                <p>Je parle couramment <b>anglaisss</b>, <b>espagnol</b>, et peux échanger simplement en <b>italien</b>.</p>
               </div>
             </div>
           </div>
