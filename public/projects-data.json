@@ -2,7 +2,7 @@
   {
     "Titre": "France Inter",
     "Description": "Application de détection du respect de la distanciation sociale avec les services  cloud  IA Microsoft Azure (Computer Vision, Text-to-Speech, Translation).",
-    "Technologies": "Backoffice client lourd python, back Typescript/Express (projet en cours)",
+    "Technologies": "Backoffice React (Nextjs), back Typescript/Express (projet en cours)",
     "Lien": "",
     "Image": ""
   },
