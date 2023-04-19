@@ -20,7 +20,7 @@ const Projets: NextPage = () => {
         <title>Benjamin Solano | Porfolio Apprenti Développeur Full Stack</title>
         <meta name="description" content="Développeur fullstack" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href=".favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
 
       <main className="container">

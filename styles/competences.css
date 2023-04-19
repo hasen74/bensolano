@@ -36,6 +36,7 @@
   --row3 : 1fr;
   --row4 : 1fr;
   --row5 : 1fr;
+  --row6 : 1fr;
 
   display: grid;
   width: 100%;
@@ -45,6 +46,7 @@
   'text-back skills-back'
   'text-bdd skills-bdd'
   'text-algo skills-algo'
+  'text-cloud skills-cloud'
   'text-front skills-front'
   'text-tools skills-tools';
   justify-content: center;
@@ -64,12 +66,16 @@
   --row3: 3.5fr
 }
 
-.competences-container.front {
+.competences-container.cloud {
   --row4: 3.5fr
 }
 
-.competences-container.tools {
+.competences-container.front {
   --row5: 3.5fr
+}
+
+.competences-container.tools {
+  --row6: 3.5fr
 }
 
 .competences-icons-containers {
@@ -130,6 +136,10 @@
   grid-area: skills-algo;
 }
 
+.competences-icons-cloud {
+  grid-area: skills-cloud;
+}
+
 .competences-icons-front {
   grid-area: skills-front;
 }
@@ -179,6 +189,10 @@
   grid-area: text-algo;
 }
 
+.competences-description-cloud {
+  grid-area: text-cloud;
+}
+
 .competences-description-front {
   grid-area: text-front;
 }
@@ -220,6 +234,7 @@
     'skills-back'
     'skills-bdd'
     'skills-algo'
+    'skills-cloud'
     'skills-front'
     'skills-tools';
     padding-top: 2vh;
