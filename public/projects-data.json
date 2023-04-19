@@ -1,7 +1,14 @@
 [
   {
+    "Titre": "France Inter",
+    "Description": "Application de détection du respect de la distanciation sociale avec les services  cloud  IA Microsoft Azure (Computer Vision, Text-to-Speech, Translation).",
+    "Technologies": "Backoffice client lourd python, back Typescript/Express (projet en cours)",
+    "Lien": "",
+    "Image": ""
+  },
+  {
     "Titre": "Application mobile scolaire d'émargement",
-    "Description": "Dans le cadre d'un codecamp mobile cross-platform. API REST et application mobile.",
+    "Description": "Dans le cadre d'un codecamp mobile cross-platform, API REST et application mobile.",
     "Technologies": "Pour le back, base de données MongoDB hébergée sur AWS via Mongo Atlas, consommée par une API Nest.js (TypeScript). Application mobile développée avec Flutter (Dart).",
     "Lien": "https://github.com/hasen74/englishquizz",
     "Image": ""

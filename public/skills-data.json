@@ -134,6 +134,30 @@
     "category": "allskillsalgo"
   },
   {
+    "skill": "azure",
+    "name": "Miscrosoft Azure",
+    "image": "/skills/azure.svg",
+    "description": "Utilisation de différents service cloud d'Azure.",
+    "projets": [
+      {
+        "titre": "Programme de détection du nombre de personnes dans une pièce. Utilisation de Computer Vision, Text-to-Speech et translation (projet en cours)"
+      }
+    ],
+    "category": "allskillscloud"
+  },
+  {
+    "skill": "atlas",
+    "name": "MongoDB Atlas",
+    "image": "/skills/atlas.png",
+    "description": "Base de données cloud hébergée sur AWS",
+    "projets": [
+      {
+        "titre": "Application d'organisation familiale (projet en cours)"
+      }
+    ],
+    "category": "allskillscloud"
+  },
+  {
     "skill": "html5",
     "name": "HTML5",
     "image": "/skills/html5.svg",
