@@ -7,6 +7,13 @@
     "Image": ""
   },
   {
+    "Titre": "World countries",
+    "Description": "Projet mobile Android d'information sur les pays du monde avec barre de recherche et carte Google Maps.",
+    "Technologies": "Kotlin, Google Maps API",
+    "Lien": "https://github.com/hasen74/worldcountries",
+    "Image": ""
+  },
+  {
     "Titre": "Application mobile scolaire d'émargement",
     "Description": "Dans le cadre d'un codecamp mobile cross-platform, API REST et application mobile.",
     "Technologies": "Pour le back, base de données MongoDB hébergée sur AWS via Mongo Atlas, consommée par une API Nest.js (TypeScript). Application mobile développée avec Flutter (Dart).",
