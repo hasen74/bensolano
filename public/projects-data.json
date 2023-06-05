@@ -8,7 +8,7 @@
   },
   {
     "Titre": "World countries",
-    "Description": "Projet mobile Android d'information sur les pays du monde avec barre de recherche et carte Google Maps.",
+    "Description": "Application mobile Android d'information sur les pays du monde avec barre de recherche et carte Google Maps.",
     "Technologies": "Kotlin, Google Maps API",
     "Lien": "https://github.com/hasen74/worldcountries",
     "Image": ""
